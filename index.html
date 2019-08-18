@@ -10,16 +10,14 @@ layout: default
   <br/>
 </div>
 
-<ul class="code">
-  {% highlight python %} 
-   <li>
-      while learning:
-  	  ask_questions
-      else:
-  	  answer_questions
-   </li>
-  {% endhighlight %}
-</ul>
+{% highlight python %} 
+  while learning:
+  	ask_questions
+  else:
+  	answer_questions
+
+{% endhighlight %}
+
 
 <ul class="post-list">
     {% for post in paginator.posts %}
