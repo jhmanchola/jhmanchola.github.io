@@ -7,7 +7,11 @@ permalink: /about/
 <img class="col one right" src="/img/prof_pic.jpg">
 
 <br/>
-Colombian, South American. I enjoy bird watching and such. Chili pepper grower. A bit of poetry: "two trees make a forest, two threes make a six". I learned how to code late in life but enjoy using it for data mining / analysis / visualization. Help people out in this <a href="https://www.reddit.com/r/whatsthisbug/" target="blank">subreddit</a>. Reader of books. name your picture "prof_pic.jpg" and put it in the img folder. 
+Colombian, South American. I learned how to code late in life but enjoy using it for data mining / analysis / visualization. 
+Previous to that, my personal experience with computers consisted of endless hours of CAD model development.
+Unqualified Chili pepper grower. A bit of poetry: "two trees make a forest, two threes make a six". 
+I enjoy bird watching and trail exploration. Please help people out in this <a href="https://www.reddit.com/r/whatsthisbug/" target="blank">subreddit</a>. 
+Reader of books. name your picture "prof_pic.jpg" and put it in the img folder. 
 
 
 
