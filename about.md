@@ -11,8 +11,7 @@ Colombian, South American. I learned how to code late in life but enjoy using it
 Previous to that, my personal experience with computers consisted of endless hours of CAD model development.
 Unqualified Chili pepper grower. A bit of poetry: "two trees make a forest, two threes make a six". 
 I enjoy bird watching and trail exploration. Please help people out in this <a href="https://www.reddit.com/r/whatsthisbug/" target="blank">subreddit</a>. 
-Reader of books. name your picture "prof_pic.jpg" and put it in the img folder. 
-
+Reader of books. My favorite bird is the common potoo. 
 
 
 <br/>
