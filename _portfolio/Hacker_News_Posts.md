@@ -5,11 +5,7 @@ description: using a 2016 dataset of posts from news.ycombinator.com
 img: /img/12.jpg
 ---
 
-<style type="text/css">
-    div.datatables { height: auto !important;}
-</style>
 
-# Analyzing Hacker News.com Posts
 This small project analyzes the activity in the comments section of posts taken from the [Hacker News](https://news.ycombinator.com/) website. The dataset used here however was downloaded from [kaggle.com](https://www.kaggle.com/hacker-news/hacker-news-posts). This dataset gathers posts from the year 2016, up to September 26 of that year. It organizes the data in seven columns, described as follows:
 
 - 'title': title of the post (self explanatory)
@@ -133,7 +129,7 @@ df.head()
 
 
 
-## Choosing a path to explore:
+<h2>Choosing a path to explore:</h2>
 
 Looking through the dataset, two post 'categories' stand out: posts that start with an 'Ask HN' string and posts that start with an 'Show HN' string. 'Ask HN' stands for 'Ask Hacker News', and this are posts from users who are asking the HN community for help. 'Show HN' are posts from users who want to promote their work and get feedback through comments and points. 
 
@@ -309,7 +305,7 @@ plt.show()
 
 ```
 
-<img src="hacker_news_img/output_7_0.png"/>
+<img src="hacker_news_img/output_7_0.png">
 
 
 ## Reading the averages
