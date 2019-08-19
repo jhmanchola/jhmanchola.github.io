@@ -129,7 +129,8 @@ df.head()
 
 
 <br>
-### Choosing a path to explore:<br>
+### Choosing a path to explore:
+<br>
 
 Looking through the dataset, two post 'categories' stand out: posts that start with an 'Ask HN' string and posts that start with an 'Show HN' string. 'Ask HN' stands for 'Ask Hacker News', and this are posts from users who are asking the HN community for help. 'Show HN' are posts from users who want to promote their work and get feedback through comments and points. 
 
@@ -234,7 +235,8 @@ ask_show_df.head()
 
 
 <br>
-### Exploring the Popularity of Ask HN  and Show HN posts<br>
+### Exploring the Popularity of Ask HN<br> and Show HN posts
+<br>
 
 Social media on the internet is about gaining 'followers' and becoming viral. In the case of Hacker News, the popularity of posts could be measured given the features found in the data. After filtering the Ask HN and the Show HN posts, it would be suitable to compare their level of importance by digging into the 'num_points' and 'num_comments' columns. Presenting an average of the number of comments and number of points this posts are given is a way of getting an answer about how popular they are.
 
@@ -308,7 +310,8 @@ plt.show()
 <img src="../hacker_news_img/output_7_0.png">
 
 <br>
-### Reading the averages<br>
+### Reading the averages
+<br>
 The average values show that there are more comments on average on 'Asking' posts than on 'Showing' posts. One reason could be that people like problem solving and by commenting in an ask post they are actually solving someone else's problem. In the showing posts, people might be solving a problem but it's harder to realize who's problem are they solving. The next step is to keep analyzing the Ask HN posts, by asking, for example, which hour of the day has the most average posts.
 
 
@@ -339,7 +342,8 @@ print('Average comments per hour (Eastern Time):\n\n',
     Name: num_comments, dtype: object
     
 <br>
-### Post Creation Hours with highest  average comments<br>
+### Post Creation Hours with highest  average comments
+<br>
 The hour a post was created receiving the highest average of comments is 15:00 Eastern Time. By looking at this information, an Ask HN post has a higher chance to get a comment at this hour. If your time zone differs from the one used in the dataset, the following code will help:
 
 
@@ -380,7 +384,8 @@ print('Average coments per hour (Nairobi Time):\n\n',
     Name: num_comments, dtype: object
     
 <br>
-### Plot the post creation hours with  highest comment average<br>
+### Plot the post creation hours with  highest comment average
+<br>
 Back to using Eastern Time, a comparison of the numbers of comments per hour is created below:
 
 
@@ -521,7 +526,8 @@ plt.show()
 <img src="../hacker_news_img/output_14_0.png">
 
 <br>
-### The Points System<br>
+### The Points System
+<br>
 
 Now that the comments activity has been explored, it would be relevant to look into the Points column, 'num_points' of the dataset. A point in the Hacker News website works as a vote. The number of points in a post equals the number of users that voted for that post. The same work done in the 'num_comments' columns will be now done in this column,. That is, determine which category, 'Show HN' or 'Ask HN, receives more points on average and depending on the answer determine at what time the comments get more points.
 
@@ -563,7 +569,8 @@ plt.show()
 <img src="../hacker_news_img/output_17_0.png">
 
 <br>
-### 'Show HN' has a higher average of Points<br>
+### 'Show HN' has a higher average of Points
+<br>
 Show HN posts get more points on average than Ask HN posts, opposite dynamic than when measuring the amount of comments. The next step is to keep analyzing the Show HN posts by finding out which hour of the day has the most average points.
 
 
@@ -595,10 +602,12 @@ print('Average points per hour (Eastern Time):\n\n',
     Name: num_points, dtype: object
     
 <br>
-### Post Creation Hours with highest  average of points<br>
+### Post Creation Hours with highest  average of points
+<br>
 The hour a post was created receiving the highest average of points is 12:00 Eastern Time. A Show HN post has a higher chance to get more points at this hour. A plot showing the number of points for each of the top 5 hours is  helpful to compare times. The plto is shown in the next section.
 <br>
-### Plotting the Number of Points per Hour<br>
+### Plotting the Number of Points per Hour
+<br>
 
 
 ```python
@@ -814,7 +823,8 @@ plt.show()
 
 **Chart 4** above shows the hour of highest average points, 12:00 Eastern Time (20:00 Nairobi Time) as compared with the other top 5 hours. It can be seen that at hour 11:00 ET a single post obtained around 1,000 points.
 <br>
-### Other posts<br>
+### Other posts
+<br>
 
 There are other types of posts in the Hacker News website which are not labeled as Ask HN or Show HN. To make this analysis complete, an exploration of the number of comments and number of points will be performed on the other posts.
 
@@ -875,7 +885,8 @@ plt.show()
 
 **Chart 5** above shows that other posts don't receive a considerable amount of comments in average, but they do get slightly more points than the Show HN category and much more points than the Ask HN category.
 <br>
-### Conclusion<br>
+### Conclusion
+<br>
 
 Hacker News is a website where tech and startup stories are shared. As any other posting service, it enables the interaction among its users. The stories that get the most engagement (number of comments/points) aquire more visibility hence giving more attention to the author of the post. This small project was able to establish three things:
 - What types of posts are found in Hacker News.com.
