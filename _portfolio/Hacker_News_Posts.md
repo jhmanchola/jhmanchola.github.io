@@ -233,9 +233,9 @@ ask_show_df.head()
 </div>
 
 
-<br>
-<h2>Exploring the Popularity of Ask HN and Show HN posts</h2><br>
-
+</br>
+<h3>Exploring the Popularity of Ask HN and Show HN posts</h3></br>
+</br>
 Social media on the internet is about gaining 'followers' and becoming viral. In the case of Hacker News, the popularity of posts could be measured given the features found in the data. After filtering the Ask HN and the Show HN posts, it would be suitable to compare their level of importance by digging into the 'num_points' and 'num_comments' columns. Presenting an average of the number of comments and number of points this posts are given is a way of getting an answer about how popular they are.
 
 
@@ -305,7 +305,7 @@ plt.show()
 
 ```
 
-<img src="/hacker_news_img/output_7_0.png">
+<img src="../hacker_news_img/output_7_0.png">
 
 
 ## Reading the averages
