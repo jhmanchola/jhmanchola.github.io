@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Analyzing Hacker News Posts
-description: using a 2016 dataset of posts from news.ycombinator.com
+description: 2016 posts from news.ycombinator.com
 img: /img/12.jpg
 ---
 
