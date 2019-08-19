@@ -305,7 +305,7 @@ plt.show()
 ```
 
 
-![png](./hacker_news_img/output_7_0.png)
+![png](/hacker_news_img/output_7_0.png)
 
 
 ## Reading the averages
@@ -521,7 +521,7 @@ plt.show()
 ```
 
 
-![png](./hacker_news_img/output_14_0.png)
+![png](/hacker_news_img/output_14_0.png)
 
 
 ## The Points System
@@ -564,7 +564,7 @@ plt.show()
 ```
 
 
-![png](./hacker_news_img/output_17_0.png)
+![png](/hacker_news_img/output_17_0.png)
 
 
 ## 'Show HN' has a higher average of Points
@@ -815,7 +815,7 @@ plt.show()
 ```
 
 
-![png](./hacker_news_img/output_24_0.png)
+![png](/hacker_news_img/output_24_0.png)
 
 
 Graph 4 above shows the hour of highest average points, 12:00 Eastern Time (20:00 Nairobi Time) as compared with the other top 5 hours. It can be seen that at hour 11:00 ET a single post obtained around 1,000 points.
@@ -876,7 +876,7 @@ plt.show()
 ```
 
 
-![png](./hacker_news_img/output_28_0.png)
+![png](/hacker_news_img/output_28_0.png)
 
 
 Graph 5 above shows that other posts don't receive a considerable amount of comments in average, but they do get slightly more points than the Show HN category and much more points than the Ask HN category.
