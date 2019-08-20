@@ -3,7 +3,7 @@ Portfolio Thumbnail Formatting:
 Source Image size: 800px X 600px 
 
 Font Family: Corbel Bold Italic
-Font Size: 48 pt
+Font Size: 72 pt
 Background color: #FF3636
-Font gradient color 1: #FF5A39
-Font gradient color 2: #333333
+Font gradient color 1: #FF3F1F
+Font gradient color 2: #FFE02B
