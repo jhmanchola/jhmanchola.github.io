@@ -1,6 +1,7 @@
 Portfolio Thumbnail Formatting:
 
 Source Image size: 800px X 600px 
+Thumbnail cropping: X:259.347, Y:332408, W:346.483, H:368.981
 
 Font Family: Corbel Bold Italic
 Font Size: 72 pt

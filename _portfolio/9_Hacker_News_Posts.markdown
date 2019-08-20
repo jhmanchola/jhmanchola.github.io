@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Analyzing Hacker News Posts
-description: 2016 posts from news.ycombinator.com
+description: 2016 posts from hackernews.com
 img: /img/12.jpg
 ---
 
