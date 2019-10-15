@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Natural Resources Rents vs Education Expenditure
-description: Exploring the World Development Indicators
+title: Natural Res. Rents vs Education Expenditure
+description: Exploring World Development Indicators
 img: /img/3.jpg
 ---
 
