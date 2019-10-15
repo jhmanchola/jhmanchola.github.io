@@ -9,9 +9,8 @@ twitter_username: twitter_username
 github_username:  github_username
 
 # Build settings
-markdown: kramdown
-kramdown:
-  parse_block_html: true
+markdown: CommonMarkGhPages
+
 
 highlighter: rouge
 
