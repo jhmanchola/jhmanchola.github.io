@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Natural Resources Rents vs Education Expenditure - Exploring the World Development Indicators
-description: Exploring correlations using the data
+title: Natural Resources Rents vs Education Expenditure
+description: Exploring the World Development Indicators
 img: /img/3.jpg
 ---
 
@@ -13,16 +13,15 @@ If you wish to copy the code shared here, then the dataset above needs to be sav
 
 <details><summary>CLICK HERE TO SHOW CODE</summary>
 <p>
-
-
-
+    
 ```python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 ```
-
+</p>
+</details>
 
 ```python
 #Open the dataset and set display values
@@ -98,8 +97,7 @@ focused_df = indicators_df[NRrents_filter|eduex_filter]
 print('Are there any null values in the ifilter_df dataframe?:',focused_df['Value'].isna().values.any())
 print('Total null values in the ifilter_df dataframe:',focused_df['Value'].isna().sum())
 ```
-</p>
-</details>
+
     Are there any null values in the ifilter_df dataframe?: False
     Total null values in the ifilter_df dataframe: 0
     
