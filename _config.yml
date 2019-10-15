@@ -9,7 +9,7 @@ twitter_username: twitter_username
 github_username:  github_username
 
 # Build settings
-markdown: CommonMarkGhPages
+markdown: kramdown
 
 
 highlighter: rouge
