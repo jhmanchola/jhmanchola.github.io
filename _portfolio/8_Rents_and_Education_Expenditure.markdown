@@ -11,7 +11,10 @@ This project uses the World Development Indicators Dataset,'Indicators.csv', whi
 Download dataset from [Kaggle](https://www.kaggle.com/worldbank/world-development-indicators) <br>
 If you wish to copy the code shared here, then the dataset above needs to be saved in a folder named "Data".
 
+{::options parse_block_html="true" /}
+
 <details><summary markdown="span">Let's see some code!</summary>
+
 ```python
 import pandas as pd
 import numpy as np
@@ -21,6 +24,8 @@ import seaborn as sns
 Of course, it has to be Hello World, right?
 </details>
 <br/>
+
+{::options parse_block_html="false" /}
 
 ```python
 #Open the dataset and set display values
