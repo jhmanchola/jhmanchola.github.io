@@ -406,20 +406,14 @@ locateAndCreateBubbleMap(high_edurank_df.head(10),'Value',
 IFrame('Map_1.html', width=610, height=370)
 ```
 
-    [1mMap 1. Top 10 Countries with Highest Education Expenditure Average[0m
+Map 1. Top 10 Countries with Highest Education Expenditure Average
     
 
 
 
 
 
-        <iframe
-            width="610"
-            height="370"
-            src="Map_1.html"
-            frameborder="0"
-            allowfullscreen
-        ></iframe>
+<iframe width="610" height="370" src="Map_1.html" frameborder="0" allowfullscreen></iframe>
         
 
 
