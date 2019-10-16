@@ -420,7 +420,7 @@ Map 1. Top 10 Countries with Highest Education Expenditure Average
 
 
 
-<iframe width="610" height="370" src="C:/Users/joman/Google%20Drive/DATA%20SCIENCE/WEB/jhmanchola.github.io/_portfolio/Map_1.html" frameborder="0" allowfullscreen></iframe>
+<iframe width="610" height="370" src="https://github.com/marchhombre/My-Projects/blob/master/Natural%20Resources%20Rents%20vs%20Education/map1.geojson" frameborder="0" allowfullscreen></iframe>
         
 
 
