@@ -345,7 +345,9 @@ high_edurank_df.head(10)
 </div>
 
 
+{::options parse_block_html="true" /}
 
+<details><summary markdown="span">Click here to toggle hide\show code!</summary>
 
 ```python
 #Function to produce a map given a list of countries and values.
@@ -406,6 +408,11 @@ locateAndCreateBubbleMap(high_edurank_df.head(10),'Value',
 IFrame('Map_1.html', width=610, height=370)
 ```
 
+</details>
+<br/>
+
+{::options parse_block_html="false" /}  
+
 Map 1. Top 10 Countries with Highest Education Expenditure Average
     
 
@@ -413,7 +420,7 @@ Map 1. Top 10 Countries with Highest Education Expenditure Average
 
 
 
-<iframe width="610" height="370" src="Map_1.html" frameborder="0" allowfullscreen></iframe>
+<iframe width="610" height="370" src="file:///C:/Users/joman/Google%20Drive/DATA%20SCIENCE/WEB/jhmanchola.github.io/_portfolio/Map_1.html" frameborder="0" allowfullscreen></iframe>
         
 
 
