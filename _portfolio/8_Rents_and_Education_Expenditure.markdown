@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Natural Res. Rents vs Education Expenditure
-description: Exploring World Development Indicators
+title: Resources Rents vs Education Expenditure
+description: World Development Indicators
 img: /img/3.jpg
 ---
 
@@ -67,7 +67,11 @@ print('*Education indicators',edu['IndicatorName'].unique())
 </details>
 <br/>
 
-{::options parse_block_html="false" /}    
+{::options parse_block_html="false" /}   
+
+<br>
+### Lists of All Indicators Regarding Rents and Education
+<br>
 
     *Rents indicators: ['Coal rents (% of GDP)' 'Forest rents (% of GDP)'
      'Mineral rents (% of GDP)' 'Natural gas rents (% of GDP)'
@@ -88,7 +92,9 @@ print('*Education indicators',edu['IndicatorName'].unique())
      'Current education expenditure, tertiary (% of total expenditure in tertiary public institutions)'
      'Current education expenditure, total (% of total expenditure in public institutions)']
     
+{::options parse_block_html="true" /}
 
+<details><summary markdown="span">Click here to toggle hide\show code!</summary>
 
 ```python
 #Choosing 'Total natural resources rents (% of GDP)' indicator
@@ -105,9 +111,15 @@ print('Total null values in the ifilter_df dataframe:',focused_df['Value'].isna(
     Are there any null values in the ifilter_df dataframe?: False
     Total null values in the ifilter_df dataframe: 0
 
+</details>
+<br/>
+
+{::options parse_block_html="false" /}   
 
 
-## Research Question: Are countries that invest the most in education lowering their dependency on natural resources rents?
+<br>
+### Research Question: Are countries that invest the most in education lowering their dependency on natural resources rents?
+<br>
 As the world depletes its natural resources, countries that make a profit out of them should start shifting their attention towards other sources of income. There's an understanding that by strengthening the educational system so that citizens have the tools to become producers and traders of knowledge and technology, the human capital gained would bring higher income than that brought by the sale of natural resources. In theory, countries that produce knowledge have less reason to depend on extractivism (i.e. the economic model that relies on extraction of natural resources). If the following statement is true: "The easier it is for governments to extract rents from external sources (by selling oil, gas, or minerals), the less dependent they are on their populations, and the more prone they are to neglect investing in human capital", then there's a lead to find out if the opposite is true.  If growing investment in education shows an inverse correlation with a country's natural resources rents as a percentage of GDP, then a formula for reducing extractivism can be traced.
 
 
