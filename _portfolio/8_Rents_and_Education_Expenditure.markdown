@@ -416,7 +416,7 @@ IFrame('Map_1.html', width=610, height=370)
 Map 1. Top 10 Countries with Highest Education Expenditure Average
     
 
-<iframe width="610" height="370" src="C:/Users/joman/Google Drive/DATA SCIENCE/WEB/jhmanchola.github.io/_portfolio/Map_1.html"></iframe>
+<iframe width="610" height="370" src="../Map_1.html"></iframe>
         
     
 
