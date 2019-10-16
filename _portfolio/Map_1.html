@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9fa1cbd26f704d179a79108cb98cdd6f {
+                    position: relative;
+                    width: 600.0px;
+                    height: 360.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9fa1cbd26f704d179a79108cb98cdd6f" ></div>
+        
+</body>
+<script>    
+    
+            var map_9fa1cbd26f704d179a79108cb98cdd6f = L.map(
+                "map_9fa1cbd26f704d179a79108cb98cdd6f",
+                {
+                    center: [31.0, 20.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1.4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c421daa9ffa04f958c63fae48846782c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9fa1cbd26f704d179a79108cb98cdd6f);
+        
+    
+            var circle_marker_3ffbd34ef10e4d2e9c606e0c49d14a2c = L.circleMarker(
+                [55.670249, 10.3333283],
+                {"bubblingMouseEvents": true, "color": "#e6194b", "dashArray": null, "dashOffset": null, "fill": "#e6194b", "fillColor": "#e6194b", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.65, "radius": 8.019323745579529, "stroke": true, "weight": 3}
+            ).addTo(map_9fa1cbd26f704d179a79108cb98cdd6f);
+        
+    
+            circle_marker_3ffbd34ef10e4d2e9c606e0c49d14a2c.bindTooltip(
+                `<div>
+                     <b><font color=#e6194b><tooltiptext=background-color:#616161e6>Denmark                             <br/>Mean: 7.290</font>                             </b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a8e9063d9ee24ab9b03f44e616e91c76 = L.circleMarker(
+                [30.8760272, 35.0015196],
+                {"bubblingMouseEvents": true, "color": "#3cb44b", "dashArray": null, "dashOffset": null, "fill": "#3cb44b", "fillColor": "#3cb44b", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.65, "radius": 7.637743304341636, "stroke": true, "weight": 3}
+            ).addTo(map_9fa1cbd26f704d179a79108cb98cdd6f);
+        
+    
+            circle_marker_a8e9063d9ee24ab9b03f44e616e91c76.bindTooltip(
+                `<div>
+                     <b><font color=#3cb44b><tooltiptext=background-color:#616161e6>Israel                             <br/>Mean: 6.943</font>                             </b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8d722148473e4b2e839dedda8d6c4ae6 = L.circleMarker(
+                [60.5000209, 9.0999715],
+                {"bubblingMouseEvents": true, "color": "#641e16 ", "dashArray": null, "dashOffset": null, "fill": "#641e16 ", "fillColor": "#641e16 ", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.65, "radius": 7.514924273581951, "stroke": true, "weight": 3}
+            ).addTo(map_9fa1cbd26f704d179a79108cb98cdd6f);
+        
+    
+            circle_marker_8d722148473e4b2e839dedda8d6c4ae6.bindTooltip(
+                `<div>
+                     <b><font color=#641e16 ><tooltiptext=background-color:#616161e6>Norway                             <br/>Mean: 6.832</font>                             </b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_11f8cd12f6fc4cfd8f45d0cba0d16045 = L.circleMarker(
+                [61.0666922, -107.9917071],
+                {"bubblingMouseEvents": true, "color": "#4363d8", "dashArray": null, "dashOffset": null, "fill": "#4363d8", "fillColor": "#4363d8", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.65, "radius": 7.132415033836874, "stroke": true, "weight": 3}
+            ).addTo(map_9fa1cbd26f704d179a79108cb98cdd6f);
+        
+    
+            circle_marker_11f8cd12f6fc4cfd8f45d0cba0d16045.bindTooltip(
+                `<div>
+                     <b><font color=#4363d8><tooltiptext=background-color:#616161e6>Canada                             <br/>Mean: 6.484</font>                             </b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0dd783e42559438b96542790c419cdc6 = L.circleMarker(
+                [63.2467777, 25.9209164],
+                {"bubblingMouseEvents": true, "color": "#f58231", "dashArray": null, "dashOffset": null, "fill": "#f58231", "fillColor": "#f58231", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.65, "radius": 6.554246545768737, "stroke": true, "weight": 3}
+            ).addTo(map_9fa1cbd26f704d179a79108cb98cdd6f);
+        
+    
+            circle_marker_0dd783e42559438b96542790c419cdc6.bindTooltip(
+                `<div>
+                     <b><font color=#f58231><tooltiptext=background-color:#616161e6>Finland                             <br/>Mean: 5.958</font>                             </b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5e0db7c1e99f4ee5bd51e3ce6c3ae1c4 = L.circleMarker(
+                [52.5001698, 5.7480821],
+                {"bubblingMouseEvents": true, "color": "#911eb4", "dashArray": null, "dashOffset": null, "fill": "#911eb4", "fillColor": "#911eb4", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.65, "radius": 6.336234267622378, "stroke": true, "weight": 3}
+            ).addTo(map_9fa1cbd26f704d179a79108cb98cdd6f);
+        
+    
+            circle_marker_5e0db7c1e99f4ee5bd51e3ce6c3ae1c4.bindTooltip(
+                `<div>
+                     <b><font color=#911eb4><tooltiptext=background-color:#616161e6>Netherlands                             <br/>Mean: 5.760</font>                             </b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_82a508606bd14784ba7e9f3b8657105a = L.circleMarker(
+                [31.1728205, -7.3362482],
+                {"bubblingMouseEvents": true, "color": "#f28500", "dashArray": null, "dashOffset": null, "fill": "#f28500", "fillColor": "#f28500", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.65, "radius": 6.2958954830876666, "stroke": true, "weight": 3}
+            ).addTo(map_9fa1cbd26f704d179a79108cb98cdd6f);
+        
+    
+            circle_marker_82a508606bd14784ba7e9f3b8657105a.bindTooltip(
+                `<div>
+                     <b><font color=#f28500><tooltiptext=background-color:#616161e6>Morocco                             <br/>Mean: 5.724</font>                             </b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9b1f81dab4ba444da5c82396d662b83b = L.circleMarker(
+                [-41.5000831, 172.8344077],
+                {"bubblingMouseEvents": true, "color": "#f032e6", "dashArray": null, "dashOffset": null, "fill": "#f032e6", "fillColor": "#f032e6", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.65, "radius": 6.223313055225117, "stroke": true, "weight": 3}
+            ).addTo(map_9fa1cbd26f704d179a79108cb98cdd6f);
+        
+    
+            circle_marker_9b1f81dab4ba444da5c82396d662b83b.bindTooltip(
+                `<div>
+                     <b><font color=#f032e6><tooltiptext=background-color:#616161e6>New Zealand                             <br/>Mean: 5.658</font>                             </b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5363da387be94662bc63aa595b353a3b = L.circleMarker(
+                [47.2000338, 13.199959],
+                {"bubblingMouseEvents": true, "color": "#145a32 ", "dashArray": null, "dashOffset": null, "fill": "#145a32 ", "fillColor": "#145a32 ", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.65, "radius": 5.960022915614321, "stroke": true, "weight": 3}
+            ).addTo(map_9fa1cbd26f704d179a79108cb98cdd6f);
+        
+    
+            circle_marker_5363da387be94662bc63aa595b353a3b.bindTooltip(
+                `<div>
+                     <b><font color=#145a32 ><tooltiptext=background-color:#616161e6>Austria                             <br/>Mean: 5.418</font>                             </b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d7c509ce2b8649fc8fd8599beb0a89a0 = L.circleMarker(
+                [46.603354, 1.8883335],
+                {"bubblingMouseEvents": true, "color": "#16a085 ", "dashArray": null, "dashOffset": null, "fill": "#16a085 ", "fillColor": "#16a085 ", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.65, "radius": 5.781804609656779, "stroke": true, "weight": 3}
+            ).addTo(map_9fa1cbd26f704d179a79108cb98cdd6f);
+        
+    
+            circle_marker_d7c509ce2b8649fc8fd8599beb0a89a0.bindTooltip(
+                `<div>
+                     <b><font color=#16a085 ><tooltiptext=background-color:#616161e6>France                             <br/>Mean: 5.256</font>                             </b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
