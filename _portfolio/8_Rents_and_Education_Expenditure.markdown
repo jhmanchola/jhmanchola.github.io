@@ -416,16 +416,9 @@ IFrame('Map_1.html', width=610, height=370)
 Map 1. Top 10 Countries with Highest Education Expenditure Average
     
 
-
-
-
-
-<iframe width="610" height="370" src="https://github.com/marchhombre/My-Projects/blob/master/Natural%20Resources%20Rents%20vs%20Education/map1.geojson" frameborder="0" allowfullscreen></iframe>
+<iframe width="610" height="370" src="Map_1.html" frameborder="0" allowfullscreen></iframe>
         
-
-
-
-Map_1.html made with Folium can't be visualized on GitHub. [Try this link to open map1.geojson visualization](https://github.com/marchhombre/Natural-Resources-Rents-and-Education/blob/master/map1.geojson)     
+    
 
 
 ```python
