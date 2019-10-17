@@ -6,14 +6,15 @@ img: /img/3.jpg
 ---
 
 
-This project uses the World Development Indicators Dataset,'Indicators.csv', which includes 6 columns: 'CountryName', 'CountryCode', 'IndicatorName', 'IndicatorCode', 'Year' and 'Value'. The project begins byThe subject of research will be taken out of the 'IndicatorName' column.
+This project uses the World Development Indicators Dataset,'Indicators.csv', which includes 6 columns: 'CountryName', 'CountryCode', 'IndicatorName', 'IndicatorCode', 'Year' and 'Value'. You can use the 'IndicatorName' column to evaluate all the subjects that were covered by country, from adolescent fertility to CO2 emissions. The subject of research will be taken out of the 'IndicatorName' column.
+In this case, the subjects selected had to do with education and natural resources rents.
 
-Download dataset from [Kaggle](https://www.kaggle.com/worldbank/world-development-indicators) <br>
-If you wish to copy the code shared here, then the dataset above needs to be saved in a folder named "Data".
+If you wish to take a look at the dataset, you can view it or download it from [Kaggle](https://www.kaggle.com/worldbank/world-development-indicators) <br>
+The code used to "mine" the data is available here. Just toggle wherever you see the label "<u>Click here to toggle hide\show code</u>" If you wish to copy the code shared here, then the dataset above needs to be saved in a folder named "Data".
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Click here to toggle hide\show code!</summary>
+<details><summary markdown="span"><u>Click here to toggle hide\show code</u></summary>
 
 ```python
 import pandas as pd
@@ -73,10 +74,16 @@ print('*Education indicators',edu['IndicatorName'].unique())
 ### Lists of All Indicators Regarding Rents and Education
 <br>
 
-    *Rents indicators: ['Coal rents (% of GDP)' 'Forest rents (% of GDP)'
-     'Mineral rents (% of GDP)' 'Natural gas rents (% of GDP)'
-     'Oil rents (% of GDP)' 'Total natural resources rents (% of GDP)']
-    *Education indicators ['Adjusted savings: education expenditure (% of GNI)'
+    **Rents indicators**:
+     'Coal rents (% of GDP)'
+     'Forest rents (% of GDP)'	 
+     'Mineral rents (% of GDP)' 
+     'Natural gas rents (% of GDP)'
+     'Oil rents (% of GDP)'
+     'Total natural resources rents (% of GDP)'
+
+    **Education indicators** 
+     'Adjusted savings: education expenditure (% of GNI)'
      'Adjusted savings: education expenditure (current US$)'
      'Government expenditure on education as % of GDP (%)'
      'Expenditure on primary as % of government expenditure on education (%)'
@@ -90,7 +97,7 @@ print('*Education indicators',edu['IndicatorName'].unique())
      'Current education expenditure, primary (% of total expenditure in primary public institutions)'
      'Current education expenditure, secondary (% of total expenditure in secondary public institutions)'
      'Current education expenditure, tertiary (% of total expenditure in tertiary public institutions)'
-     'Current education expenditure, total (% of total expenditure in public institutions)']
+     'Current education expenditure, total (% of total expenditure in public institutions)'
     
 {::options parse_block_html="true" /}
 
@@ -217,7 +224,6 @@ titles.append(most_years.head(20))
     Denmark                          33
     New Zealand                      33
     Cyprus                           33
-    dtype: object
 
 
 
@@ -416,7 +422,7 @@ IFrame('Map_1.html', width=610, height=370)
 Map 1. Top 10 Countries with Highest Education Expenditure Average
     
 
-<iframe width="610" height="370" src="../Map_1.html"></iframe>
+<iframe width="610" height="370" src="../8_img/Map_1.html" frameborder="0" allowfullscreen></iframe>
         
     
 
