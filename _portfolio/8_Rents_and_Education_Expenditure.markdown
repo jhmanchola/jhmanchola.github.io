@@ -72,10 +72,10 @@ print('*Education indicators',edu['IndicatorName'].unique())
 {::options parse_block_html="false" /}   
 
 <br>
-### Lists of All Indicators Regarding Rents and Education
+#### Lists of All Indicators Regarding Rents and Education
 <br>
 
-   #### Rents indicators<br>   
+   __Rents indicators__<br>   
    'Coal rents (% of GDP)'<br>
    'Forest rents (% of GDP)'<br> 
    'Mineral rents (% of GDP)'<br> 
@@ -83,10 +83,11 @@ print('*Education indicators',edu['IndicatorName'].unique())
    'Oil rents (% of GDP)'<br>
    'Total natural resources rents (% of GDP)'<br>
 
-   #### Education indicators<br>
+   __Education indicators__<br>
+   
    'Adjusted savings: education expenditure (% of GNI)'<br>
    'Adjusted savings: education expenditure (current US$)'<br>
-   'Government expenditure on education as % of GDP (%)'
+   'Government expenditure on education as % of GDP (%)'<br>
    'Expenditure on primary as % of government expenditure on education (%)'<br>
    'Expenditure on secondary as % of government expenditure on education (%)'<br>
    'Expenditure on tertiary as % of government expenditure on education (%)'<br>
@@ -126,10 +127,13 @@ print('Total null values in the ifilter_df dataframe:',focused_df['Value'].isna(
 
 
 <br>
-### Research Question: Are countries that invest the most in education lowering their dependency on natural resources rents?
+#### Research Question: Are countries that invest the most in education lowering their dependency on natural resources rents?
 <br>
 As the world depletes its natural resources, countries that make a profit out of them should start shifting their attention towards other sources of income. There's an understanding that by strengthening the educational system so that citizens have the tools to become producers and traders of knowledge and technology, the human capital gained would bring higher income than that brought by the sale of natural resources. In theory, countries that produce knowledge have less reason to depend on extractivism (i.e. the economic model that relies on extraction of natural resources). If the following statement is true: "The easier it is for governments to extract rents from external sources (by selling oil, gas, or minerals), the less dependent they are on their populations, and the more prone they are to neglect investing in human capital", then there's a lead to find out if the opposite is true.  If growing investment in education shows an inverse correlation with a country's natural resources rents as a percentage of GDP, then a formula for reducing extractivism can be traced.
 
+{::options parse_block_html="true" /}
+
+<details><summary markdown="span"><u>Click here to toggle hide\show code</u></summary>
 
 ```python
 #Distribution of data for the year 2013, since there's no rents data for the year 2014:
@@ -150,20 +154,24 @@ on the right which shows most governments invest very little of the GDP in educa
 from 0 to around 5% of the GDP in the year 2013')
 ```
 
-    C:\Users\JORGE\Anaconda3\lib\site-packages\scipy\stats\stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
-      return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
-    
+</details>
+<br/>
+
+{::options parse_block_html="false" /}   
 
 
 <img src="../8_img/output_8_1.png">
 
 
-    Graph 1. A comparison of this two kernel density plots show that most countries have total
+   Graph 1. A comparison of this two kernel density plots show that most countries have total
     natural resources rents in between 0 and around 15% of the GDP. More notorious is the plot
     on the right which shows most governments invest very little of the GDP in education,
     from 0 to around 5% of the GDP in the year 2013
     
 
+{::options parse_block_html="true" /}
+
+<details><summary markdown="span"><u>Click here to toggle hide\show code</u></summary>
 
 ```python
 #Take a look at the range of years showing up:
@@ -181,11 +189,18 @@ print('The Rents Indicator has (a) country(ies) with max',
       focused_df[rent_years]['CountryCode'].value_counts().max(),'years of data.')
 ```
 
-    Years 1970 to 2014
+</details>
+<br/>
+
+{::options parse_block_html="false" /}  
+
+   Years 1970 to 2014
     The Education Indicator has (a) country(ies) with max 42 years of data.
     The Rents Indicator has (a) country(ies) with max 44 years of data.
     
+{::options parse_block_html="true" /}
 
+<details><summary markdown="span"><u>Click here to toggle hide\show code</u></summary>
 
 ```python
 #The Government expenditure on education as % of GDP (%)
@@ -201,6 +216,10 @@ titles = pd.Series(['Years of Data'],index=['Country'])#Set titles to show in ou
 titles.append(most_years.head(20))
 ```
 
+</details>
+<br/>
+
+{::options parse_block_html="false" /}  
 
 
 
@@ -286,7 +305,6 @@ high_edurank_df.head(10)
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
       <th>CountryName</th>
       <th>CountryCode</th>
       <th>Value</th>
