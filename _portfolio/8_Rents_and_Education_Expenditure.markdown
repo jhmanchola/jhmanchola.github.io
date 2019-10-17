@@ -7,6 +7,7 @@ img: /img/3.jpg
 
 
 This project uses the World Development Indicators Dataset,'Indicators.csv', which includes 6 columns: 'CountryName', 'CountryCode', 'IndicatorName', 'IndicatorCode', 'Year' and 'Value'. You can use the 'IndicatorName' column to evaluate all the subjects that were covered by country, from adolescent fertility to CO2 emissions. The subject of research will be taken out of the 'IndicatorName' column.
+
 In this case, the subjects selected had to do with education and natural resources rents.
 
 If you wish to take a look at the dataset, you can view it or download it from [Kaggle](https://www.kaggle.com/worldbank/world-development-indicators) <br>
@@ -74,7 +75,7 @@ print('*Education indicators',edu['IndicatorName'].unique())
 ### Lists of All Indicators Regarding Rents and Education
 <br>
 
-    **Rents indicators**:
+   **Rents indicators**:
      'Coal rents (% of GDP)'
      'Forest rents (% of GDP)'	 
      'Mineral rents (% of GDP)' 
@@ -82,7 +83,7 @@ print('*Education indicators',edu['IndicatorName'].unique())
      'Oil rents (% of GDP)'
      'Total natural resources rents (% of GDP)'
 
-    **Education indicators** 
+   **Education indicators** 
      'Adjusted savings: education expenditure (% of GNI)'
      'Adjusted savings: education expenditure (current US$)'
      'Government expenditure on education as % of GDP (%)'
@@ -101,7 +102,7 @@ print('*Education indicators',edu['IndicatorName'].unique())
     
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Click here to toggle hide\show code!</summary>
+<details><summary markdown="span"><u>Click here to toggle hide\show code</u></summary>
 
 ```python
 #Choosing 'Total natural resources rents (% of GDP)' indicator
@@ -543,7 +544,7 @@ plt.show()
 
 ## Now is time to compare the opposite premise: Are countries receiving the most rents from natural resources investing less in education, according to the GDP %?
 
-Unfortunately, the countries with highest natural resources rents as a % of GDP don't have enough years of data for their Expenditure in Education indicator. A compromise has to be made so that we get countries with high rents average and enough years of education expenditure.
+Unfortunately, the countries with highest natural resources rents as a % of GDP don't have enough years of data for their Expenditure in Education indicator. A compromise has to be made so that we get countries with high rents average and enough years of education expenditure. The following 20 countries were found as having 44 years worth of Natural Resources data each:
 
 
 ```python
@@ -556,7 +557,7 @@ most_years.head(20)
 
 
 
-
+    COUNTRY                                 # OF YEARS OF DATA
     Kenya                                          44
     Other small states                             44
     Malawi                                         44
@@ -577,7 +578,6 @@ most_years.head(20)
     Latin America & Caribbean (developing only)    44
     Turkey                                         44
     Netherlands                                    44
-    Name: CountryName, dtype: int64
 
 
 
