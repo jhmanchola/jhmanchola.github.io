@@ -75,30 +75,30 @@ print('*Education indicators',edu['IndicatorName'].unique())
 ### Lists of All Indicators Regarding Rents and Education
 <br>
 
-   **Rents indicators**:
-     'Coal rents (% of GDP)'
-     'Forest rents (% of GDP)'	 
-     'Mineral rents (% of GDP)' 
-     'Natural gas rents (% of GDP)'
-     'Oil rents (% of GDP)'
-     'Total natural resources rents (% of GDP)'
+   <strong>Rents indicators</strong>:
+     'Coal rents (% of GDP)'<br>
+     'Forest rents (% of GDP)'<br> 
+     'Mineral rents (% of GDP)'<br> 
+     'Natural gas rents (% of GDP)'<br>
+     'Oil rents (% of GDP)'<br>
+     'Total natural resources rents (% of GDP)'<br>
 
-   **Education indicators** 
-     'Adjusted savings: education expenditure (% of GNI)'
-     'Adjusted savings: education expenditure (current US$)'
+   <strong>Education indicators</strong> 
+     'Adjusted savings: education expenditure (% of GNI)'<br>
+     'Adjusted savings: education expenditure (current US$)'<br>
      'Government expenditure on education as % of GDP (%)'
-     'Expenditure on primary as % of government expenditure on education (%)'
-     'Expenditure on secondary as % of government expenditure on education (%)'
-     'Expenditure on tertiary as % of government expenditure on education (%)'
-     'Expenditure on education as % of total government expenditure (%)'
-     'All education staff compensation, primary (% of total expenditure in primary public institutions)'
-     'All education staff compensation, secondary (% of total expenditure in secondary public institutions)'
-     'All education staff compensation, tertiary (% of total expenditure in tertiary public institutions)'
-     'All education staff compensation, total (% of total expenditure in public institutions)'
-     'Current education expenditure, primary (% of total expenditure in primary public institutions)'
-     'Current education expenditure, secondary (% of total expenditure in secondary public institutions)'
-     'Current education expenditure, tertiary (% of total expenditure in tertiary public institutions)'
-     'Current education expenditure, total (% of total expenditure in public institutions)'
+     'Expenditure on primary as % of government expenditure on education (%)'<br>
+     'Expenditure on secondary as % of government expenditure on education (%)'<br>
+     'Expenditure on tertiary as % of government expenditure on education (%)'<br>
+     'Expenditure on education as % of total government expenditure (%)'<br>
+     'All education staff compensation, primary (% of total expenditure in primary public institutions)'<br>
+     'All education staff compensation, secondary (% of total expenditure in secondary public institutions)'<br>
+     'All education staff compensation, tertiary (% of total expenditure in tertiary public institutions)'<br>
+     'All education staff compensation, total (% of total expenditure in public institutions)'<br>
+     'Current education expenditure, primary (% of total expenditure in primary public institutions)'<br>
+     'Current education expenditure, secondary (% of total expenditure in secondary public institutions)'<br>
+     'Current education expenditure, tertiary (% of total expenditure in tertiary public institutions)'<br>
+     'Current education expenditure, total (% of total expenditure in public institutions)'<br>
     
 {::options parse_block_html="true" /}
 
@@ -420,7 +420,7 @@ IFrame('Map_1.html', width=610, height=370)
 
 {::options parse_block_html="false" /}  
 
-Map 1. Top 10 Countries with Highest Education Expenditure Average
+Map 1. Top 10 Countries with Highest Education Expenditure Average (% of GDP)
     
 
 <iframe width="610" height="370" src="../8_img/Map_1.html" frameborder="0" allowfullscreen></iframe>
@@ -542,7 +542,9 @@ plt.show()
 ![png](output_18_1.png)
 
 
-## Now is time to compare the opposite premise: Are countries receiving the most rents from natural resources investing less in education, according to the GDP %?
+<br>
+### Now is time to compare the opposite premise: Are countries receiving the most rents from natural resources investing less in education, according to the GDP %?
+<br>
 
 Unfortunately, the countries with highest natural resources rents as a % of GDP don't have enough years of data for their Expenditure in Education indicator. A compromise has to be made so that we get countries with high rents average and enough years of education expenditure. The following 20 countries were found as having 44 years worth of Natural Resources data each:
 
