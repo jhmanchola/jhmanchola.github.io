@@ -75,30 +75,30 @@ print('*Education indicators',edu['IndicatorName'].unique())
 ### Lists of All Indicators Regarding Rents and Education
 <br>
 
-   <strong>Rents indicators</strong>:
-     'Coal rents (% of GDP)'<br>
-     'Forest rents (% of GDP)'<br> 
-     'Mineral rents (% of GDP)'<br> 
-     'Natural gas rents (% of GDP)'<br>
-     'Oil rents (% of GDP)'<br>
-     'Total natural resources rents (% of GDP)'<br>
+   #### Rents indicators<br>   
+   'Coal rents (% of GDP)'<br>
+   'Forest rents (% of GDP)'<br> 
+   'Mineral rents (% of GDP)'<br> 
+   'Natural gas rents (% of GDP)'<br>
+   'Oil rents (% of GDP)'<br>
+   'Total natural resources rents (% of GDP)'<br>
 
-   <strong>Education indicators</strong> 
-     'Adjusted savings: education expenditure (% of GNI)'<br>
-     'Adjusted savings: education expenditure (current US$)'<br>
-     'Government expenditure on education as % of GDP (%)'
-     'Expenditure on primary as % of government expenditure on education (%)'<br>
-     'Expenditure on secondary as % of government expenditure on education (%)'<br>
-     'Expenditure on tertiary as % of government expenditure on education (%)'<br>
-     'Expenditure on education as % of total government expenditure (%)'<br>
-     'All education staff compensation, primary (% of total expenditure in primary public institutions)'<br>
-     'All education staff compensation, secondary (% of total expenditure in secondary public institutions)'<br>
-     'All education staff compensation, tertiary (% of total expenditure in tertiary public institutions)'<br>
-     'All education staff compensation, total (% of total expenditure in public institutions)'<br>
-     'Current education expenditure, primary (% of total expenditure in primary public institutions)'<br>
-     'Current education expenditure, secondary (% of total expenditure in secondary public institutions)'<br>
-     'Current education expenditure, tertiary (% of total expenditure in tertiary public institutions)'<br>
-     'Current education expenditure, total (% of total expenditure in public institutions)'<br>
+   #### Education indicators<br>
+   'Adjusted savings: education expenditure (% of GNI)'<br>
+   'Adjusted savings: education expenditure (current US$)'<br>
+   'Government expenditure on education as % of GDP (%)'
+   'Expenditure on primary as % of government expenditure on education (%)'<br>
+   'Expenditure on secondary as % of government expenditure on education (%)'<br>
+   'Expenditure on tertiary as % of government expenditure on education (%)'<br>
+   'Expenditure on education as % of total government expenditure (%)'<br>
+   'All education staff compensation, primary (% of total expenditure in primary public institutions)'<br>
+   'All education staff compensation, secondary (% of total expenditure in secondary public institutions)'<br>
+   'All education staff compensation, tertiary (% of total expenditure in tertiary public institutions)'<br>
+   'All education staff compensation, total (% of total expenditure in public institutions)'<br>
+   'Current education expenditure, primary (% of total expenditure in primary public institutions)'<br>
+   'Current education expenditure, secondary (% of total expenditure in secondary public institutions)'<br>
+   'Current education expenditure, tertiary (% of total expenditure in tertiary public institutions)'<br>
+   'Current education expenditure, total (% of total expenditure in public institutions)'<br>
     
 {::options parse_block_html="true" /}
 
@@ -287,13 +287,9 @@ high_edurank_df.head(10)
   <thead>
     <tr style="text-align: right;">
       <th></th>
+      <th>CountryName</th>
       <th>CountryCode</th>
       <th>Value</th>
-    </tr>
-    <tr>
-      <th>CountryName</th>
-      <th></th>
-      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -354,7 +350,7 @@ high_edurank_df.head(10)
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Click here to toggle hide\show code!</summary>
+<details><summary markdown="span"><u>Click here to toggle hide\show code</u></summary>
 
 ```python
 #Function to produce a map given a list of countries and values.
@@ -426,7 +422,9 @@ Map 1. Top 10 Countries with Highest Education Expenditure Average (% of GDP)
 <iframe width="610" height="370" src="../8_img/Map_1.html" frameborder="0" allowfullscreen></iframe>
         
     
+{::options parse_block_html="true" /}
 
+<details><summary markdown="span"><u>Click here to toggle hide\show code</u></summary>
 
 ```python
 #Plotting a simple bar graph showing the top 10 countries comparison:
@@ -442,6 +440,10 @@ sns.despine(left=True,bottom=True)
 plt.show()
 ```
 
+</details>
+<br/>
+
+{::options parse_block_html="false" /}  
 
 <img src="../8_img/output_14_0.png">
 
