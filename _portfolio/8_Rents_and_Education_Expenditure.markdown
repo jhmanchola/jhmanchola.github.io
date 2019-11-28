@@ -5,18 +5,20 @@ description: World Development Indicators
 img: /img/3.jpg
 ---
 
-
-This project uses the World Development Indicators Dataset,'Indicators.csv', which includes 6 columns: 'CountryName', 'CountryCode', 'IndicatorName', 'IndicatorCode', 'Year' and 'Value'. If you wish to take a look at the dataset, you can view it or download it from [Kaggle](https://www.kaggle.com/worldbank/world-development-indicators) <br>
-The code used to "mine" the data is available here. Just click at the end of the page on the label "<u>Click here to toggle hide\show code</u>" If you wish to copy the code shared here, then the dataset above needs to be saved in a folder named "Data".
-
 <br>
 #### Research Question: Are countries that invest the most in education lowering their dependency on natural resources rents?
 <br>
-As the world depletes its natural resources, countries that make a profit out of them should start shifting their attention towards other sources of income. There's an understanding that by strengthening the educational system so that citizens have the tools to become producers and traders of knowledge and technology, the human capital gained would bring higher income than that brought by the sale of natural resources. In theory, countries that produce knowledge have less reason to depend on extractivism (i.e. the economic model that relies on extraction of natural resources). If the following statement is true: "The easier it is for governments to extract rents from external sources (by selling oil, gas, or minerals), the less dependent they are on their populations, and the more prone they are to neglect investing in human capital", then there's a lead to find out if the opposite is true.  If growing investment in education shows an inverse correlation with a country's natural resources rents as a percentage of GDP, then a formula for reducing extractivism can be traced.
+This question rises after deeply exploring the World Development Indicators Dataset,'Indicators.csv', a dataset showing 247 countries and how their indicators vary in between the years of 1960 and 2015. It includes 6 variables (columns): 'CountryName', 'CountryCode', 'IndicatorName', 'IndicatorCode', 'Year' and 'Value'. If you wish to take a look at the dataset, you can view it or download it from [Kaggle](https://www.kaggle.com/worldbank/world-development-indicators) <br>
+The code used to "mine" the data is available here. Just click at the end of the page on the label "<u>Click here to toggle hide\show code</u>" If you wish to copy the code shared here, then the dataset above needs to be saved in a folder named "Data".
 
-You can use the 'IndicatorName' column to evaluate all the subjects that were covered by country, from adolescent fertility to CO2 emissions. The subject of research will be taken out of the 'IndicatorName' column.
+<br>
+#### Introduction
+<br>
+As the world depletes its natural resources, countries that make a profit out of them should start shifting their attention towards other sources of income. It would make sense to strengthen the educational system so that citizens have the tools to become producers and traders of knowledge and technology, so that the human capital gained would bring higher income than that brought by the sale of natural resources. In theory, countries that produce knowledge have less reason to depend on extractivism (i.e. the economic model that relies on extraction of natural resources). If the following statement is true: "The easier it is for governments to extract rents from external sources (by selling oil, gas, or minerals), the less dependent they are on their populations, and the more prone they are to neglect investing in human capital", then there's a motivation to find out if the opposite is true.  If growing investment in education shows an inverse correlation with a country's natural resources rents as a percentage of GDP, then a formula for reducing extractivism can be traced.
 
-In this case, the subjects selected had to do with education and natural resources rents. So the first step is to take a look at all the indicators that have to do with natural resources rents and education.
+You can use the 'IndicatorName' column of the dataset to evaluate all the subjects that were covered by country, which ranged from adolescent fertility to CO2 emissions.
+
+In this case, the subjects selected had to do with education and natural resources rents. So the first step was to take a look at all the indicators that had to do with natural resources rents and education.
 
 
 <br>
@@ -50,7 +52,7 @@ In this case, the subjects selected had to do with education and natural resourc
    'Current education expenditure, total (% of total expenditure in public institutions)'<br>
     
 
-PUT SOMETHING HERE!
+A broad approach is intended here, so for the natural resoureces rents the indicator 'Total natural resources rents (% of GDP)' was selected, as it included all the rents. For the education indicator the 'Total natural resources rents (% of GDP)' indicator was chosen. A comparison between the distributions of both indicators is shown below.
 
 
 
