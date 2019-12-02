@@ -10,20 +10,20 @@ img: /img/spider.jpg
 <br>
 <img src="../spiderman_vs_aquaman_img/aqua_vs_spider.jpg">
 
-Can a sentiment analysis give us a forecast of a movie's success? 1600 tweets with the #Spiderman hashtag, and 1600 tweets using #Aquaman were gathered on January 8th 2019.  The following chart shows the negative and positive sentiment comparison among nboth movies. This analysis was done using a trained Naive Bayes Classifier, a model that classified the sentiments of text as positive or negative. Every tweet had to fall in either one of the two categories. 
+Can a sentiment analysis give us a forecast of a movie's success? 1600 tweets with the #Spiderman hashtag, and 1600 tweets using #Aquaman were gathered on January 8th 2019.  The following chart shows the negative and positive sentiment comparison among both movies. This analysis was done using a trained Naive Bayes Classifier, a model that classified the sentiments of text as positive or negative. Every tweet had to fall in either one of the two categories. 
 
 <br>
-#### Results of the Trained Naive Bayes Classifier
+#### Results of the Sentiment Analysis
 <br>
 
 <img src="../spiderman_vs_aquaman_img/output_4_0.png">
 
 <br>
-__Example of a tweet that was classified as Positive__: 'baby. baby boy🥰 #SpiderVerse'
+<strong>Example of a tweet that was classified as Positive</strong>: 'baby. baby boy🥰 #SpiderVerse'
 <br>
 
 <br>
-__Example of a tweet that was classified as Negative__: 'So now ppl saying #AQUAMAN making a billion dollars is fixed?????'
+<strong>Example of a tweet that was classified as Negative</strong>: 'So now ppl saying #AQUAMAN making a billion dollars is fixed?????'
 <br>
 
 
@@ -43,30 +43,47 @@ __Example of a tweet that was classified as Negative__: 'So now ppl saying #AQUA
 <br>
 
 The following matrix shows that the classifier used in this case may have incorrectly labeled a percentage of tweets as negative/positive:
-
-       |      n      p |
-       |      e      o |
-       |      g      s |
-   ----+---------------+
-   neg | <49.6%>  0.3% |
-   pos |   0.5% <49.5%>|
-    ----+---------------+
     
 |          | negative | positive |
 | -------- | -------- | -------- |
 | negative | <49.6%>  | 0.3%     |
 | positive | 0.5%     | <49.5%>  |
+
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th> </th>
+      <th>negative</th>
+      <th>positive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>negative</th>
+      <td>&lt;49.6%&gt;</td>
+      <td>0.3%</td>
+    </tr>
+    <tr>
+      <th>positive</th>
+      <td>0.5%</td>
+      <td>&lt;49.5%&gt;</td>
+    </tr>
+  </tbody>
+</table>
+</div>
     
-$\begin{array} \ & \rm mean & \rm variance & \rm covariance\\ \hat\beta_0 & \beta_0 & \frac{\sigma^2\overline X^2}{n\hat\sigma^2_x}+\frac{\sigma^2}{n} & \frac{-\sigma^2\overline X}{n\hat\sigma^2_x}\\ \hat\beta_1 & \beta_1 & \frac{\sigma^2}{n\hat\sigma^2_x} & " "\end{array}$
-    
-But what about if we want another category, like 'Neutral'? Some people's opinion may not be totally positive nor negative, so a second analysis was done using the classifier TextBlob. This is an out-of-the-box sentiment analyzer which gave us a new 'Positive' and 'Negative' result, with an additional 'Neutral' sentiment result. TextBlob is a Pyhton library useful for sentiment analysis. 
+
+But what about if we want another category, like 'Neutral'? Some people's opinion may not be totally positive nor negative, so a second analysis was done using the classifier TextBlob, part of a Pyhton library useful for text sentiment analysis. This is an out-of-the-box sentiment analyzer which gave us a new 'Positive' and 'Negative' result, with an additional 'Neutral' sentiment result.
 
 <img src="../spiderman_vs_aquaman_img/output_14_0.png">
 
-__Example of a tweet that was classified as Neutral__:'AQUAMAN is what you get in you make a soup with a bit of the legend of King Arthur PACIFIC RIM ICE AGE 2 and HOW'
 <br>
+<strong>Example of a tweet that was classified as Neutral</strong>:'AQUAMAN is what you get in you make a soup with a bit of the legend of King Arthur PACIFIC RIM ICE AGE 2 and HOW'
+<br>
+
 In both analysis, the movie 'Spiderman: Into the Spiderverse' showed more positive sentiment and less negative sentiment than 'Aquaman'. We see that the second analysis showed that some tweets could be indeed neutral, but that didn't change the apparent dominance of the Spiderman movie.
-<br>
+
 
 <br>
 #### Box Office Results :
@@ -76,17 +93,12 @@ How popular were these movies in terms of ticket sales? The domestic box office 
 
 <img src="../spiderman_vs_aquaman_img/gross.png">
 
-__The total worlwide box office grosses__<br>
+<strong>The total worlwide box office grosses</strong><br>
 
-<span style="color:blue">Aquaman(2018) :  USD 1,148,161,807</span>
+<span style="color:#006994"><strong>Aquaman(2018) :  USD 1,148,161,807</strong></span>
 
-<span style="color:#006994">Aquaman(2018) :  USD 1,148,161,807</span>
+<span style="color:#B11313"><strong>Spiderman: Into The Spider-Verse(2018) :  USD 375,540,831</strong></span>
 
-<span style="color:red">Spiderman: Into The Spider-Verse(2018) :  USD 375,540,831</span>
-
-__*<font color=#006994>Aquaman(2018) :  USD 1,148,161,807</font>*__
-
-__*<font color=#B11313>Spiderman: Into The Spider-Verse(2018) :  USD 375,540,831</font>*__
 
 Aquaman was clearly a winner in the box office by more than double. According to the tweeter sentiment, 'Spiderman: Into the Spider-Verse' should've done much better. 
 
