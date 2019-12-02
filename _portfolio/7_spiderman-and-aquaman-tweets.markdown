@@ -8,7 +8,7 @@ img: /img/spider.jpg
 <br>
 #### Twitterverse Sentiment Analysis for Spiderman: Into The Spider-Verse(2018)  and Aquaman(2018) Movies
 <br>
-<img src="../spiderman_vs_aquaman_img/aqua_vs_spider.jpg">
+<img src="../spiderman_vs_aquaman_img/aqua_vs_spider.jpg" class="center">
 
 Can a sentiment analysis give us a forecast of a movie's success? 1600 tweets with the #Spiderman hashtag, and 1600 tweets using #Aquaman were gathered on January 8th 2019.  The following chart shows the negative and positive sentiment comparison among both movies. This analysis was done using a trained Naive Bayes Classifier, a model that classified the sentiments of text as positive or negative. Every tweet had to fall in either one of the two categories. 
 
