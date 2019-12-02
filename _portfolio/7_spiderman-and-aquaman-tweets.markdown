@@ -44,13 +44,13 @@ Can a sentiment analysis give us a forecast of a movie's success? 1600 tweets wi
 
 The following matrix shows that the classifier used in this case may have incorrectly labeled a percentage of tweets as negative/positive:
     
-|          | negative | positive |
-| -------- | -------- | -------- |
-| negative | <49.6%>  | 0.3%     |
-| positive | 0.5%     | <49.5%>  |
+|            | negative   | positive   |
+| ---------- | ---------- | ---------- |
+| negative   | <49.6%>    |   0.3%     |
+| positive   |   0.5%     | <49.5%>    |
 
 </style>
-<table border="1" class="dataframe">
+<table border="0" class="w3-light-grey">
   <thead>
     <tr style="text-align: center;">
       <th> </th>
@@ -59,12 +59,12 @@ The following matrix shows that the classifier used in this case may have incorr
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr style="text-align: center;">
       <th>negative</th>
       <td>&lt;49.6%&gt;</td>
       <td>0.3%</td>
     </tr>
-    <tr>
+    <tr style="text-align: center;">
       <th>positive</th>
       <td>0.5%</td>
       <td>&lt;49.5%&gt;</td>
@@ -79,7 +79,7 @@ But what about if we want another category, like 'Neutral'? Some people's opinio
 <img src="../spiderman_vs_aquaman_img/output_14_0.png">
 
 <br>
-<strong>Example of a tweet that was classified as Neutral</strong>:'AQUAMAN is what you get in you make a soup with a bit of the legend of King Arthur PACIFIC RIM ICE AGE 2 and HOW'
+<strong>Example of a tweet that was classified as Neutral</strong>: 'AQUAMAN is what you get in you make a soup with a bit of the legend of King Arthur PACIFIC RIM ICE AGE 2 and HOW'
 <br>
 
 In both analysis, the movie 'Spiderman: Into the Spiderverse' showed more positive sentiment and less negative sentiment than 'Aquaman'. We see that the second analysis showed that some tweets could be indeed neutral, but that didn't change the apparent dominance of the Spiderman movie.
