@@ -31,6 +31,8 @@ Can a sentiment analysis give us a forecast of a movie's success? 1600 tweets wi
 #### Classifier Precision Stats
 <br>
 
+Letting a machine predict the sentiment of text raises skepticism, so there are some measures that give us some degree of confidence in our results. Below are the 'precision', 'recall' and 'F-measure' that indicate how well was the analysis done. For context, 'precision' is the frequency of a result having the correct sentiment. 'Recall' is the percentage of tweets that were assigned a sentiment (were not neutral). 'F-measure' is the combined score of precision and recall, with 1 being a perfect score and 0 being the worst score.
+
    positive precision: 0.993<br>
    positive recall: 0.991<br>
    positive F-measure: 0.992<br>
@@ -42,36 +44,15 @@ Can a sentiment analysis give us a forecast of a movie's success? 1600 tweets wi
 #### Classifier Acurracy on Labeling Sentiment
 <br>
 
-The following matrix shows that the classifier used in this case may have incorrectly labeled a percentage of tweets as negative/positive:
+The following matrix shows that the classifier used in this case may have incorrectly labeled a percentage of tweets as negative/positive (in this case 0.5% of negative tweets were mislabeled as positive):
     
-|            | negative   | positive   |
-| ---------- | ---------- | ---------- |
-| negative   | <49.6%>    |   0.3%     |
-| positive   |   0.5%     | <49.5%>    |
+|          	| negative 	| positive 	|
+|----------	|:--------:	|:--------:	|
+| negative 	|  <49.6%> 	|   0.3%   	|
+| positive 	|   0.5%   	|  <49.5%> 	|
 
-<table border="1" class="w3-table-all">
-  <thead>
-    <tr style="text-align: center;">
-      <th> </th>
-      <th>negative</th>
-      <th>positive</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="text-align: center;">
-      <th>negative</th>
-      <td>&lt;49.6%&gt;</td>
-      <td>0.3%</td>
-    </tr>
-    <tr style="text-align: center;">
-      <th>positive</th>
-      <td>0.5%</td>
-      <td>&lt;49.5%&gt;</td>
-    </tr>
-  </tbody>
-</table>
 
-    
+<br>    
 But what if we want another sentiment category, like 'Neutral'? Some people's opinion may not be totally positive nor negative, so a second analysis was done using the classifier TextBlob, part of a Pyhton library useful for text sentiment analysis. This is an out-of-the-box sentiment analyzer which gave us a new 'Positive' and 'Negative' result, with an additional 'Neutral' sentiment result.
 
 <img src="../spiderman_vs_aquaman_img/output_14_0.png">
