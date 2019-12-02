@@ -49,8 +49,7 @@ The following matrix shows that the classifier used in this case may have incorr
 | negative   | <49.6%>    |   0.3%     |
 | positive   |   0.5%     | <49.5%>    |
 
-</style>
-<table border="0" class="w3-light-grey">
+<table border="1" class="w3-table-all">
   <thead>
     <tr style="text-align: center;">
       <th> </th>
@@ -71,10 +70,9 @@ The following matrix shows that the classifier used in this case may have incorr
     </tr>
   </tbody>
 </table>
-</div>
-    
 
-But what about if we want another category, like 'Neutral'? Some people's opinion may not be totally positive nor negative, so a second analysis was done using the classifier TextBlob, part of a Pyhton library useful for text sentiment analysis. This is an out-of-the-box sentiment analyzer which gave us a new 'Positive' and 'Negative' result, with an additional 'Neutral' sentiment result.
+    
+But what if we want another sentiment category, like 'Neutral'? Some people's opinion may not be totally positive nor negative, so a second analysis was done using the classifier TextBlob, part of a Pyhton library useful for text sentiment analysis. This is an out-of-the-box sentiment analyzer which gave us a new 'Positive' and 'Negative' result, with an additional 'Neutral' sentiment result.
 
 <img src="../spiderman_vs_aquaman_img/output_14_0.png">
 
@@ -111,7 +109,7 @@ Aquaman was clearly a winner in the box office by more than double. According to
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span"><u>Click here to toggle hide\show code</u></summary>
+<details><summary markdown="span"><u>Click here to toggle hide\show python code</u></summary>
 
 ```python
 #Get the twitter_samples database with 5000 positive tweets and 5000 negative tweets
@@ -355,11 +353,14 @@ plt.xticks(tick_pos, ["Positive", "Negative"], fontsize=14)
 plt.yticks(fontsize=13)
 
 for r1, r2 in zip(ax1, ax2): #Code to configure text inside each plot
-    h1 = r1.get_height()
-    h2 = r2.get_height()
-    plt.text(r1.get_x() + r1.get_width() / 2., h1 / 2., "%d" % h1, ha="center", va="center", 
+    h1 = r1.get_height() #In first loop it gets positive count, then negative then neutral for spider
+    h2 = r2.get_height() #Same for aqua
+    percent_spider = (h1/1600)*100 #Turn the count into a percentage
+    percent_aqua = (h2/1600)*100
+
+    plt.text(r1.get_x() + r1.get_width() / 2., h1 / 2., "%d %%" % percent_spider, ha="center", va="center", 
              color="white", fontsize=13, fontweight="bold")
-    plt.text(r2.get_x() + r2.get_width() / 2., h1 + h2 / 2., "%d" % h2, ha="center", va="center", 
+    plt.text(r2.get_x() + r2.get_width() / 2., h1 + h2 / 2., "%d %%" % percent_aqua, ha="center", va="center", 
              color="white", fontsize=13, fontweight="bold")
 plt.legend(prop={'size': 13})
 plt.title('Sentiment Analysis on Tweets about\n Spiderman and Aquaman Movies')
@@ -466,11 +467,13 @@ plt.xticks(tick_pos, ["Positive", "Negative","Neutral"], fontsize=14)
 plt.yticks(fontsize=13)
 
 for r1, r2 in zip(ax1, ax2): #Code to configure text inside each plot
-    h1 = r1.get_height()
-    h2 = r2.get_height()
-    plt.text(r1.get_x() + r1.get_width() / 2., h1 / 2., "%d" % h1, ha="center", va="center", 
+    h1 = r1.get_height() #In first loop it gets positive count, then negative then neutral for spider
+    h2 = r2.get_height() #Same for aqua
+    percent_spider = (h1/1600)*100 #Turn the count into a percentage
+    percent_aqua = (h2/1600)*100
+    plt.text(r1.get_x() + r1.get_width() / 2., h1 / 2., "%d %%" % percent_spider, ha="center", va="center", 
              color="white", fontsize=13, fontweight="bold")
-    plt.text(r2.get_x() + r2.get_width() / 2., h1 + h2 / 2., "%d" % h2, ha="center", va="center", 
+    plt.text(r2.get_x() + r2.get_width() / 2., h1 + h2 / 2., "%d %%" % percent_aqua, ha="center", va="center", 
              color="white", fontsize=13, fontweight="bold")
 plt.legend(prop={'size': 13})
 plt.title('Sentiment Analysis on Tweets about\n Spiderman and Aquaman Movies')
