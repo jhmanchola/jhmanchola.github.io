@@ -18,6 +18,8 @@ Can a sentiment analysis give us a forecast of a movie's success? 1600 tweets wi
 
 <img src="../spiderman_vs_aquaman_img/output_4_0.png">
 
+The Spiderman movie has more 79% positive and 20% negative sentiment. It has more positive sentiment than the Aquaman movie, according to the Classifier. Let's check an example of what was considered a positive tweet versus a negative tweet:
+
 <br>
 <strong>Example of a tweet that was classified as Positive</strong>: 'baby. baby boy🥰 #SpiderVerse'
 <br>
@@ -46,16 +48,18 @@ Letting a machine predict the sentiment of text raises skepticism, so there are 
 
 The following matrix shows that the classifier used in this case may have incorrectly labeled a percentage of tweets as negative/positive (in this case 0.5% of negative tweets were mislabeled as positive):
     
-|          	| negative 	| positive 	|
-|----------	|:--------:	|:--------:	|
-| negative 	|  <49.6%> 	|   0.3%   	|
-| positive 	|   0.5%   	|  <49.5%> 	|
+|           	| negative  	| positive  	|
+|---------- 	|:--------: 	|:--------: 	|
+| negative  	|  <49.6%>  	|   0.3%    	|
+| positive  	|   0.5%    	|  <49.5%>  	|
 
 
 <br>    
 But what if we want another sentiment category, like 'Neutral'? Some people's opinion may not be totally positive nor negative, so a second analysis was done using the classifier TextBlob, part of a Pyhton library useful for text sentiment analysis. This is an out-of-the-box sentiment analyzer which gave us a new 'Positive' and 'Negative' result, with an additional 'Neutral' sentiment result.
 
 <img src="../spiderman_vs_aquaman_img/output_14_0.png">
+
+The Spiderman movie wins the positive sentiment again, and we see there were not so many neutral tweets overall. Below is an example of what the Classifier considered to be neutral text:
 
 <br>
 <strong>Example of a tweet that was classified as Neutral</strong>: 'AQUAMAN is what you get in you make a soup with a bit of the legend of King Arthur PACIFIC RIM ICE AGE 2 and HOW'
