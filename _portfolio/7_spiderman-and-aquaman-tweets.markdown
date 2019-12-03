@@ -18,7 +18,7 @@ Can a sentiment analysis give us a forecast of a movie's success? 1600 tweets wi
 
 <img src="../spiderman_vs_aquaman_img/output_4_0.png">
 
-The Spiderman movie has more 79% positive and 20% negative sentiment. It has more positive sentiment than the Aquaman movie, according to the Classifier. Let's check an example of what was considered a positive tweet versus a negative tweet:
+The Spiderman movie has 79% positive and 20% negative sentiment. It has more positive sentiment and less negative sentiment than the Aquaman movie, according to the Classifier. Let's check an example of what was considered a positive tweet versus a negative tweet:
 
 <br>
 <strong>Example of a tweet that was classified as Positive</strong>: 'baby. baby boy🥰 #SpiderVerse'
