@@ -230,7 +230,79 @@ best_schools[['sat_score','Neighborhood']].groupby('Neighborhood').mean().sort_v
 
 
 <div>
-<style scoped>
+<style>
+    body{
+      font:1.2em normal Arial,sans-serif;
+      color:#34495E;
+    }
+
+    h1{
+      text-align:left;
+      text-transform:uppercase;
+      letter-spacing:-2px;
+      font-size:2.0em;
+      margin:20px 0;
+    }
+
+    .container{
+      width:90%;
+      margin:auto;
+    }
+
+    table{
+      border-collapse:collapse;
+      width:60%;
+    }
+
+    .blue{
+      border:2px solid #1ABC9C;
+    }
+
+    .blue thead{
+      background:#1ABC9C;
+    }
+
+    .purple{
+      border:2px solid #9B59B6;
+    }
+
+    .purple thead{
+      background:#9B59B6;
+    }
+
+    thead{
+      color:#303030;
+    }
+
+    th,td{
+      text-align:left;
+      padding:5px 5;
+    }
+
+    tbody tr:nth-child(even){
+      background:#ECF0F1;
+    }
+
+    tbody tr:hover{
+    background:#BDC3C7;
+      color:#101010;
+    }
+
+    .fixed{
+      top:0;
+      position:fixed;
+      width:auto;
+      display:none;
+      border:none;
+    }
+
+    .scrollMore{
+      margin-top:300px;
+    }
+
+    .up{
+      cursor:pointer;
+    }
 
 </style>
 <table border="0" class="dataframe">
