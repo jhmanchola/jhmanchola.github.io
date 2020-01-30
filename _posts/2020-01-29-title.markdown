@@ -65,7 +65,7 @@ plt.show()
       app.launch_new_instance()
     
 
-
+<br>
 <img src="../2020-01-29-title-img/output_3_1.png">
 
 <br>
