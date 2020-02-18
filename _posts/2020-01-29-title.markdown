@@ -65,8 +65,9 @@ plt.show()
       app.launch_new_instance()
     
 
-<br>
-<img src="../2020-01-29-title-img/output_3_1.png">
+<div class="img_row">
+<img class="col three" src="_posts/2020-01-29-title-img/output_3_1.png">
+</div>
 
 <br>
 ### Now Geopy will get the information we need
