@@ -66,12 +66,16 @@ plt.show()
     
 
 <div class="img_row">
-<img class="col three" src="_posts/2020-01-29-title-img/output_3_1.jpg">
+    <img class="col three" src="_posts/2020-01-29-title-img/1.jpg">
 </div>
 
 <div class="img_row">
-<img class="col three" src="_posts/2020-01-29-title-img/1.jpg">
+    <img class="col three" src="/img/output_3_1.jpg">
 </div>
+<div class="img_row">
+    <img class="col three" src="/img/1.jpg">
+</div>
+
 
 <br>
 ### Now Geopy will get the information we need
