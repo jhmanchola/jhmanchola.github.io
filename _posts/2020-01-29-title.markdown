@@ -1,6 +1,6 @@
 ---
 layout: post
-title: tutorial: NYC high schools and neighborhoods georeference
+title: tutorial/ NYC high schools and neighborhoods georeference
 date: 2020-01-29 15:09:00
 description: working with Geopy and web scrapping
 ---
