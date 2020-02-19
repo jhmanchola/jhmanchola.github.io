@@ -6,7 +6,9 @@ description: working with Geopy and web scrapping
 ---
 
 <br>
-### Using  Coordinates and Web Scrapping To Identify NYC Neighborhoods with the Best High Schools
+### Identify NYC Neighborhoods with the Best High Schools
+<br>
+### Using  Coordinates and Web Scrapping 
 <br>
 
 Here we are working in Python with a cleaned dataset created with the contents of other small datasets. In summary, the dataset contains information about New York City High Schools ranked by SAT score results average from the year 2012. Along with the scores and other information, the dataset has the geographic coordinates (latitude, longitude) and the DBN (District Borough Number) of each school. Can we use this to find the neighborhood in which each school is located?
@@ -233,10 +235,6 @@ best_schools[['sat_score','Neighborhood']].groupby('Neighborhood').mean().sort_v
 
     h1{
       text-align:left;
-      text-transform:uppercase;
-      letter-spacing:-2px;
-      font-size:2.0em;
-      margin:20px 0;
     }
 
     .container{
