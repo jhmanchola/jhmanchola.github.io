@@ -57,13 +57,7 @@ plt.colorbar()
 plt.show()
 ```
 
-    C:\Users\joman\Anaconda3\lib\site-packages\ipykernel_launcher.py:11: MatplotlibDeprecationWarning: 
-    The dedent function was deprecated in Matplotlib 3.1 and will be removed in 3.3. Use inspect.cleandoc instead.
-      # This is added back by InteractiveShellApp.init_path()
-    C:\Users\joman\Anaconda3\lib\site-packages\ipykernel_launcher.py:16: MatplotlibDeprecationWarning: 
-    The dedent function was deprecated in Matplotlib 3.1 and will be removed in 3.3. Use inspect.cleandoc instead.
-      app.launch_new_instance()
-    
+Map of New York City High Schools (Color coded by SAT score)
 <img src="/img/2020-01-29-title-img/output_3_1.jpg">
 
 <div class="image">
@@ -236,7 +230,7 @@ best_schools[['sat_score','Neighborhood']].groupby('Neighborhood').mean().sort_v
 <style>
     body{
       font:1.2em normal Arial,sans-serif;
-      color:#34495E;
+      color:#828282;
     }
 
     h1{
