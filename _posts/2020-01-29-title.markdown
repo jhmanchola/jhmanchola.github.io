@@ -58,7 +58,6 @@ plt.show()
 ```
 
 Map of New York City High Schools (Color coded by SAT score)
-<img src="/img/2020-01-29-title-img/output_3_1.jpg">
 
 <div class="image">
     <img src="/img/2020-01-29-title-img/output_3_1.png">
@@ -229,7 +228,6 @@ best_schools[['sat_score','Neighborhood']].groupby('Neighborhood').mean().sort_v
 <div>
 <style>
     body{
-      font:1.2em normal Arial,sans-serif;
       color:#828282;
     }
 
