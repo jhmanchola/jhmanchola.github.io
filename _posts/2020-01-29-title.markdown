@@ -22,12 +22,15 @@ With the coordinates we can place each school on a map, and we also know the cit
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import os #The Basemap model if we don't set 'os.environ['PROJ_LIB']'
-os.environ['PROJ_LIB'] = 'C:/Users/joman/Anaconda3/Lib/site-packages/mpl_toolkits/basemap'
+import os 
+
+# Basemap would not work in a jupyter notebook if we don't include the following line:
+os.environ['PROJ_LIB'] = 'C:/Users/YOUR_USERNAME/Anaconda3/Lib/site-packages/mpl_toolkits/basemap'
+
 from mpl_toolkits.basemap import Basemap
 from geopy.geocoders import Nominatim
 
-#Read the data into a pandas dataframe
+# Read the data into a pandas dataframe
 best_schools_url = 'https://raw.githubusercontent.com/jhmanchola/Learning-curve/master/Problem-Solving/Web-Scraping-for-Missing-Map-Data/best_schools.csv'
 best_schools = pd.read_csv(best_schools_url)
 ```
@@ -37,7 +40,7 @@ best_schools = pd.read_csv(best_schools_url)
 <br>
 
 ```python
-#Get the longitudes and latitudes as list
+# Get the longitudes and latitudes as list
 best_schools_lon =best_schools['lon'].tolist()
 best_schools_lat =best_schools['lat'].tolist()
 
@@ -75,20 +78,21 @@ Geopy uses geocoding services to get the data it is requesting. Some services ar
 
 
 ```python
-#create a new column with the coordinates as a string
+# create a new column with the coordinates as a string
 best_schools["coords"] = best_schools.loc[:,"lat"].astype(str)+','+best_schools.loc[:,"lon"].astype(str)
 
-#Override the default user_agent parameter with a madeup one to prevent deprecation warning
-#here the madeup parameter is 'myapp/1', it doesn't mean anything, it's just to please the programming gods
+# Override the default user_agent parameter with a madeup one to prevent deprecation warning
+# here the madeup parameter is 'myapp/1', it doesn't mean anything, it's just to please the programming gods
 geolocator = Nominatim(user_agent='myapp/1',timeout = 7) #Increase timeout to avoid timeout error
-#If timeout parameter doesn't help, use the RateLimiter
-#This will allow multiple requests in case of timeouts
+
+# If timeout parameter doesn't help, use the RateLimiter
+# This will allow multiple requests in case of timeouts
 from geopy.extra.rate_limiter import RateLimiter 
 geocode = RateLimiter(geolocator.reverse, min_delay_seconds=1) #Create the object
 
 location_tuples = best_schools['coords'].apply(geocode) #Create a series with the applied function on 'coords'
 
-#Create an example location to see how it works
+# Create an example location to see how it works
 location = geolocator.reverse("40.761432699000466,-73.98802369799967")
 location
 ```
@@ -108,7 +112,7 @@ In the above code we created a Pandas Series called `location_tuples`. Here we s
 
 
 ```python
-#slice [1:5]
+# slice [1:5]
 inter_neighborhd = location_tuples.apply(lambda x: x[0].split(', ')[1:5])
 inter_neighborhd.head()
 ```
