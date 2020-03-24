@@ -1,11 +1,4 @@
----
-layout: post
-title:  Probability tree diagram with multicolor text
-date:   2019-08-18 10:50:16
-description: mix networkx with some plot.ly to plot multicolor text in graphs (code and examples)
----
-
-### Creating a probability tree diagram with multicolor fonts
+# Creating a probability tree diagram with multicolor fonts
 
 The Python package [NetworkX](https://networkx.github.io/) is very useful if you want to work with graphs to visualize complex networks. The package is amazing as is, but for a specific project I wanted to customize the color of the fonts and the shape of the graph I was creating. Here I describe the approach I took to make it possible. Before we begin, here's the list of packages I used in Python:
 
@@ -19,6 +12,7 @@ NetworkX includes data structures for graphs, digraphs, and multigraphs. The typ
 <div class="image">
     <img src="/img/2019-08-18-title-img/head_tails_diagram.png">
 </div>
+
 
 The diagram above shows all the possible outcomes of a coin that is tossed twice. H means 'Heads' and T is 'Tails'. The diagram is read from left to right, where we see that doing one toss we get 2 outputs, and adding to that a second toss we get 4 outputs. The vertex in the leftmost side is called the 'root' of the diagram.
 
