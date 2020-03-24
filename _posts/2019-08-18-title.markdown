@@ -257,68 +257,7 @@ iplot(fig)
 ```
 
 
-<script type="text/javascript">
-window.PlotlyConfig = {MathJaxConfig: 'local'};
-if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
-if (typeof require !== 'undefined') {
-require.undef("plotly");
-requirejs.config({
-    paths: {
-        'plotly': ['https://cdn.plot.ly/plotly-latest.min']
-    }
-});
-require(['plotly'], function(Plotly) {
-    window._Plotly = Plotly;
-});
-}
-</script>
-
-
-
-
-<div>
-
-
-            <div id="25e46a62-155c-4212-ab9c-7ed0e01e1128" class="plotly-graph-div" style="height:500px; width:800px;"></div>
-            <script type="text/javascript">
-                require(["plotly"], function(Plotly) {
-                    window.PLOTLYENV=window.PLOTLYENV || {};
-
-                if (document.getElementById("25e46a62-155c-4212-ab9c-7ed0e01e1128")) {
-                    Plotly.newPlot(
-                        '25e46a62-155c-4212-ab9c-7ed0e01e1128',
-                        [{"marker": {"color": [], "showscale": false, "size": 0}, "mode": "text", "text": [], "type": "scatter", "x": [], "y": []}, {"line": {"color": "#777", "width": 0.9}, "mode": "lines", "text": [], "type": "scatter", "x": [0, 0.13, null, 0, 0.13, null, 0.13, 0.26, null, 0.13, 0.26, null], "y": [0.5, 0.5999999999999999, null, 0.5, 0.39999999999999986, null, 0.5999999999999999, 0.5999999999999999, null, 0.39999999999999986, 0.39999999999999986, null]}, {"marker": {"color": ["#9ea3f2", "#9ea3f2", "#9ea3f2", "#9ea3f2", "#9ea3f2", "white", "white", "white", "white", "white"], "showscale": false, "size": 50, "symbol": "circle"}, "mode": "markers+text", "name": "Nodes", "showlegend": false, "text": ["root", "1", "2", "3", "4"], "textfont": {"size": 14}, "type": "scatter", "x": [0, 0.13, 0.13, 0.26, 0.26], "y": [0.5, 0.5999999999999999, 0.39999999999999986, 0.5999999999999999, 0.39999999999999986]}],
-                        {"autosize": true, "height": 500, "hovermode": "closest", "margin": {"b": 0, "l": 0, "r": 0, "t": 30}, "showlegend": false, "template": {"data": {"scatter": [{"type": "scatter"}]}}, "title": {"font": {"size": 16}, "text": "Graph 2"}, "width": 800},
-                        {"responsive": true}
-                    ).then(function(){
-
-var gd = document.getElementById('25e46a62-155c-4212-ab9c-7ed0e01e1128');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })
-                };
-                });
-            </script>
-        </div>
+IMAGE
 
 
 Now we have a graph that looks more like our diagram. We have a horizontal distribution and the root is on the leftmost side of the plot. Each new branch will appear to the right of its 'parent' node.
@@ -370,10 +309,6 @@ Breaking down our dictionaries, we see that `test_nodes` has 7 nodes (counting n
 `test_edges_labls` are the labels that are place in the edges in between nodes. The key for each label is the combination of the origin node with the destination node that create the edge. The first label has the key '01' meaning that the label value goes in the edge tha goes from node 0 to node 1.
 
 To use our dictionaries, we need to create a function that builds our NetworkX graph using this information. Then we get the positions using the `hierarchy_pos()` and finally we plot.
-
-
-
-
 
 
 ```python
@@ -532,50 +467,7 @@ iplot(fig)
 
 ```
 
-
-<div>
-
-
-            <div id="7a14ef6c-8b21-44c6-91d9-d24f1a0dad7b" class="plotly-graph-div" style="height:500px; width:800px;"></div>
-            <script type="text/javascript">
-                require(["plotly"], function(Plotly) {
-                    window.PLOTLYENV=window.PLOTLYENV || {};
-
-                if (document.getElementById("7a14ef6c-8b21-44c6-91d9-d24f1a0dad7b")) {
-                    Plotly.newPlot(
-                        '7a14ef6c-8b21-44c6-91d9-d24f1a0dad7b',
-                        [{"marker": {"color": [], "showscale": false, "size": 0}, "mode": "text", "text": [], "type": "scatter", "x": [0], "y": [0.5]}, {"line": {"color": "#777", "width": 0.9}, "mode": "lines", "text": [], "type": "scatter", "x": [0, 0.13, null, 0, 0.13, null, 0.13, 0.26, null, 0.13, 0.26, null, 0.13, 0.26, null, 0.13, 0.26, null], "y": [0.5, 0.5999999999999999, null, 0.5, 0.39999999999999986, null, 0.5999999999999999, 0.6499999999999999, null, 0.5999999999999999, 0.5499999999999999, null, 0.39999999999999986, 0.44999999999999996, null, 0.39999999999999986, 0.35, null]}, {"marker": {"color": ["white", "white", "white", "white", "white", "white"], "showscale": false, "size": 50, "symbol": "circle"}, "mode": "markers+text", "name": "Nodes", "showlegend": false, "text": ["$\\color{green}{\\LARGE S}$", "$\\color{green}{\\LARGE S^c}$", "$\\color{green}{\\LARGE S}\\LARGE \\cap\\color{red}{\\LARGE T}$", "$\\color{green}{\\LARGE S}\\LARGE \\cap\\color{red}{\\LARGE T^c}$", "$\\color{green}{\\LARGE S^c}\\LARGE \\cap\\color{red}{\\LARGE T^c}$", "$\\color{green}{\\LARGE S^c}\\LARGE \\cap\\color{red}{\\LARGE T}$"], "textfont": {"size": 14}, "type": "scatter", "x": [0.13, 0.13, 0.26, 0.26, 0.26, 0.26], "y": [0.5999999999999999, 0.39999999999999986, 0.6499999999999999, 0.5499999999999999, 0.44999999999999996, 0.35]}],
-                        {"annotations": [{"align": "center", "arrowsize": 1, "arrowwidth": 1, "ax": 3, "ay": -5, "borderpad": 1, "font": {"color": "#333", "size": 12}, "showarrow": true, "text": "$P(\\color{green}{S})\\\\ 0.001$", "x": 0.065, "xref": "x", "y": 0.5499999999999999, "yref": "y"}, {"align": "center", "arrowsize": 1, "arrowwidth": 1, "ax": 3, "ay": -5, "borderpad": 1, "font": {"color": "#333", "size": 12}, "showarrow": true, "text": "$P(\\color{green}{S^c})\\\\ 0.999$", "x": 0.065, "xref": "x", "y": 0.44999999999999996, "yref": "y"}, {"align": "center", "arrowsize": 1, "arrowwidth": 1, "ax": 3, "ay": -5, "borderpad": 1, "font": {"color": "#333", "size": 12}, "showarrow": true, "text": "$P(\\color{red}{T}|\\color{green}{S})\\\\ 0.95$", "x": 0.195, "xref": "x", "y": 0.6249999999999999, "yref": "y"}, {"align": "center", "arrowsize": 1, "arrowwidth": 1, "ax": 3, "ay": -5, "borderpad": 1, "font": {"color": "#333", "size": 12}, "showarrow": true, "text": "$P(\\color{red}{T^c}|\\color{green}{S})\\\\ 0.05$", "x": 0.195, "xref": "x", "y": 0.575, "yref": "y"}, {"align": "center", "arrowsize": 1, "arrowwidth": 1, "ax": 3, "ay": -5, "borderpad": 1, "font": {"color": "#333", "size": 12}, "showarrow": true, "text": "$P(\\color{red}{T^c}|\\color{green}{S^c})\\\\ 0.95$", "x": 0.195, "xref": "x", "y": 0.42499999999999993, "yref": "y"}, {"align": "center", "arrowsize": 1, "arrowwidth": 1, "ax": 3, "ay": -5, "borderpad": 1, "font": {"color": "#333", "size": 12}, "showarrow": true, "text": "$P(\\color{red}{T}|\\color{green}{S^c})\\\\ 0.05$", "x": 0.195, "xref": "x", "y": 0.3749999999999999, "yref": "y"}], "autosize": true, "height": 500, "hovermode": "closest", "margin": {"b": 0, "l": 0, "r": 0, "t": 30}, "showlegend": false, "template": {"data": {"scatter": [{"type": "scatter"}]}}, "title": {"font": {"size": 16}, "text": "Patient Probability Tree"}, "width": 800, "xaxis": {"showgrid": false, "zeroline": false}, "yaxis": {"showgrid": false}},
-                        {"responsive": true}
-                    ).then(function(){
-
-var gd = document.getElementById('7a14ef6c-8b21-44c6-91d9-d24f1a0dad7b');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })
-                };
-                });
-            </script>
-        </div>
+IMAGE
 
 
 Here we have our multicolor-labeled diagram, very helpful to visualize the different scenarios and their probability. 
