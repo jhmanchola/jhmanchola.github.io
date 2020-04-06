@@ -4,8 +4,9 @@ title:  Probability tree diagram with multicolor text
 date:   2019-08-18 10:50:16
 description: mix networkx with some plot.ly to plot multicolor text in graphs (code and examples)
 ---
-
+<br>
 #### Creating a probability tree diagram with multicolor fonts
+<br>
 
 The Python package [NetworkX](https://networkx.github.io/) is very useful if you want to work with graphs to visualize complex networks. The package is amazing as is, but for a specific project I wanted to customize the color of the fonts and the shape of the graph I was creating. Here I describe the approach I took to make it possible. Before we begin, here's the list of packages I used in Python:
 
@@ -273,10 +274,10 @@ The next par is customizing the font color of the labels that appear in each nod
 
 I want to be able to use the color coding for each combination of events. Here are all possible combinations:
 
-- Patient is healthy but test is positive = $\color{green}{S^c}∩\color{red}{T}$
-- Patient is healthy and test is negative = $\color{green}{S^c}∩\color{red}{T^c}$
-- Patient is sick and test is positive = $\color{green}{S}∩\color{red}{T}$
-- Patient is sick and test is negative = $\color{green}{S}∩\color{red}{T^c}$
+- Patient is healthy but test is positive = <span style="color:#008000"><strong>S<sup>c</sup></strong></span>∩<span style="color:#ff0000"><strong>T</strong></span>
+- Patient is healthy and test is negative = <span style="color:#008000"><strong>S<sup>c</sup></strong></span>∩<span style="color:#ff0000"><strong>T<sup>c</sup></strong></span>
+- Patient is sick and test is positive = <span style="color:#008000"><strong>S</strong></span>∩<span style="color:#ff0000"><strong>T</strong></span>
+- Patient is sick and test is negative = <span style="color:#008000"><strong>S</strong></span>∩<span style="color:#ff0000"><strong>T<sup>c</sup></strong></span>
 
 Unfortunately, NetworkX doesn't allow us to use multicolor fonts in the labels as seen above. We are going to use [LaTeX](https://en.wikipedia.org/wiki/LaTeX) syntax to create our multicolor text, and plotly will allow us to do that. LaTex is already available in Jupyter notebooks, so there's no need to install anything else.
 
