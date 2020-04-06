@@ -268,7 +268,7 @@ The next par is customizing the font color of the labels that appear in each nod
 
 - <span style="color:#008000"><strong>S</strong></span> = Sick patient 
 - <span style="color:#008000"><strong>S<sup>c</sup></strong></span> = Healthy patient
-- <span style="color:#ff0000"><strong>T</strong></span> = Healthy patient = Test positive
+- <span style="color:#ff0000"><strong>T</strong></span> = Test positive
 - <span style="color:#ff0000"><strong>T<sup>c</sup></strong></span> = Test negative
 
 I want to be able to use the color coding for each combination of events. Here are all possible combinations:
