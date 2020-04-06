@@ -257,17 +257,19 @@ iplot(fig)
 ```
 
 
-IMAGE
+<div class="image">
+    <img src="/img/2019-08-18-title-img/graph2.png">
+</div>
 
 
 Now we have a graph that looks more like our diagram. We have a horizontal distribution and the root is on the leftmost side of the plot. Each new branch will appear to the right of its 'parent' node.
 
 The next par is customizing the font color of the labels that appear in each node. In this case, I want to do a tree diagram that explains the probability of a patient having a disease. I want to use the following convention for the labels:
 
-- $\color{green}{S}$ = Sick patient
-- $\color{green}{S^c}$ = Healthy patient
-- $\color{red}{T}$ = Test positive
-- $\color{red}{T^c}$ = Test negative
+- <span style="color:#008000"><strong>S</strong></span> = Sick patient 
+- <span style="color:#008000"><strong>S<sup>c</sup></strong></span> = Healthy patient
+- <span style="color:#ff0000"><strong>T</strong></span> = Healthy patient = Test positive
+- <span style="color:#ff0000"><strong>T<sup>c</sup></strong></span> = Test negative
 
 I want to be able to use the color coding for each combination of events. Here are all possible combinations:
 
@@ -282,7 +284,7 @@ If we want to write the label for the case where a patient is healthy and the te
 
 `$\color{green}{S^c}∩\color{red}{T^c}$` 
 
-which results in: $\color{green}{S^c}∩\color{red}{T^c}$.
+which results in: <span style="color:#008000">S<sup>c</sup></span>∩<span style="color:#ff0000">T<sup>c</sup></span>.
 
 We will create a new graph and add nodes and edges to illustrate our patient case. To make the list of multicolored-labeled nodes and edges easier to create, we use tow dictionaries, `test_nodes` for the nodes and `test_edges_labls` for the edge labels:
 
@@ -467,7 +469,9 @@ iplot(fig)
 
 ```
 
-IMAGE
+<div class="image">
+    <img src="/img/2019-08-18-title-img/final_graph.png">
+</div>
 
 
 Here we have our multicolor-labeled diagram, very helpful to visualize the different scenarios and their probability. 
