@@ -5,7 +5,7 @@ date:   2019-08-18 10:50:16
 description: mix networkx with some plot.ly to plot multicolor text in graphs (code and examples)
 ---
 
-### Creating a probability tree diagram with multicolor fonts
+#### Creating a probability tree diagram with multicolor fonts
 
 The Python package [NetworkX](https://networkx.github.io/) is very useful if you want to work with graphs to visualize complex networks. The package is amazing as is, but for a specific project I wanted to customize the color of the fonts and the shape of the graph I was creating. Here I describe the approach I took to make it possible. Before we begin, here's the list of packages I used in Python:
 
@@ -278,7 +278,7 @@ I want to be able to use the color coding for each combination of events. Here a
 - Patient is sick and test is positive = $\color{green}{S}∩\color{red}{T}$
 - Patient is sick and test is negative = $\color{green}{S}∩\color{red}{T^c}$
 
-Unfortunately, NetworkX doesn't allow us to use multicolor fonts in the labels as seen above. We are going to use [LaTeX](https://en.wikipedia.org/wiki/LaTeX) syntax to create our multicolor text, and pltly will alow us to do that. LaTex is already available in Jupyter notebooks, so there's no need to install anything else.
+Unfortunately, NetworkX doesn't allow us to use multicolor fonts in the labels as seen above. We are going to use [LaTeX](https://en.wikipedia.org/wiki/LaTeX) syntax to create our multicolor text, and plotly will allow us to do that. LaTex is already available in Jupyter notebooks, so there's no need to install anything else.
 
 If we want to write the label for the case where a patient is healthy and the test is negative, we will use the following LaTex syntax: 
 
