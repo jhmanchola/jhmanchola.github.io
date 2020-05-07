@@ -5,6 +5,6 @@ description: NOAA ICOADS dataset
 img: /img/4.jpg
 ---
 
-{% include sstemps.html %}
+
 
 
