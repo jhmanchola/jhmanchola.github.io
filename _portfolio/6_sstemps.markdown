@@ -24,19 +24,22 @@ Project Methods:
 
 <img src="../6_img/map_1.gif" class="center">
 
-<strong><br>Map 1.</strong> Animation showing the change in the top average sea surface temperatures by location by year, from the years 1950 to 2017. As it is expected, the area along the equator has the highest average temperatures. Notice how the year 1950 has more lower temperatures and more locations on the top average temperatures than the year 2017. Each year has the top 200,000 readings averaged by location. With this in mind, the animation is showing an increase in sea surface temperature. The area in the Red Sea and the Persian Gulf stand out as the hotter places across all years.
+<strong>Map 1.</strong> Animation showing the change in the top average sea surface temperatures by year, from the years 1950 to 2017. As it is expected, the area along the equator has the highest average temperatures. Notice how the year 1950 has more lower temperatures and more locations on the top average temperatures than the year 2017. Each year has the top 200,000 readings averaged by location. The animation is showing an increase in sea surface temperature. The area in the Red Sea and the Persian Gulf stand out as the hotter places across all years.
 
+<br>
 #### Change of the highest averages per year and per location
-
+<br>
 For the range of 67 years for which the yearly sea surface temperature average was calculated, the following chart shows how the highest averages has changed.
 
 <img src="../6_img/chart_1.png" class="center">
 
-**Chart 1**. Each point is a map coordinate that had one of the 200'000 top temperature averages for each year. The highest average temperatures in 1950 are more spread and range almost from the low 20s to the mid 30s. As years increase, average temperatures increase and comprise a lower range ending in between the top 20s to the mid 30s. The lowest top averages (bottom points in each year) increase as well. This is why we see more blue colored areas in Map 1 for the year 1950 and a concentration of high temperatures in determined areas for the year 2017. 
+<strong>Chart 1.</strong> Each point is a map coordinate that had one of the 200'000 top temperature averages for each year. The highest average temperatures in 1950 are more spread and range almost from the low 20s to the mid 30s. As years increase, average temperatures increase and comprise a lower range ending in between the top 20s to the mid 30s. The lowest top averages (bottom points in each year) increase as well. This is why we see more blue colored areas in Map 1 for the year 1950 and a concentration of high temperatures in determined areas for the year 2017. 
 
 The following visualization shows how temperature behaves as a function of location using longitude and latitude values:
 
 <img src="../6_img/chart_2.png" class="center">
+
+<strong>Chart 2.</strong> By changing the longitude there isn't much change for each temperature point. Longitudes, the imaginary lines moving East to West around Earth don't vary a lot. Latitudes (lines going North to South), on the other hand, show different temperatures according to the value. Latitudes on the equator have higher temperatures than those in the Northern and Southern Hemispheres. 
 
 {% include sstemps.html %}
 
