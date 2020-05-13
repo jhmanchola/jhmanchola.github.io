@@ -53,7 +53,7 @@ nx.draw(graph_1,with_labels=True)
 </div>
 
 
-We have a graph with nodes connected by lines. The order in which is node is displayed is random and if we repeat the procedure, we can get a different order. In my case, I want to do a diagram that is read left to right, showing all possible outcomes of a given event. So I need to control the coordinates in which each node appears. To start, here's an outline of what follows to get my diagram:
+We have a graph with nodes connected by lines. The order in which each node is displayed is random and if we repeat the procedure, we can get a different order. In my case, I want to do a diagram that is read left to right, showing all possible outcomes of a given event. So I need to control the coordinates in which each node appears. To start, here's an outline of what follows to get my diagram:
 
 1) Use NetworkX functions to create a hierarchy tree that is displayed horizontally, with the 'root' at the leftmost side and adding 'branches' as we move right.
 

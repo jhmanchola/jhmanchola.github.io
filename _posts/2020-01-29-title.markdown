@@ -13,7 +13,7 @@ description: working with Geopy and web scrapping
 
 Here we are working in Python with a cleaned dataset created with the contents of other small datasets. In summary, the dataset contains information about New York City High Schools ranked by SAT score results average from the year 2012. Along with the scores and other information, the dataset has the geographic coordinates (latitude, longitude) and the DBN (District Borough Number) of each school. Can we use this to find the neighborhood in which each school is located?
 
-With the coordinates we can place each school on a map, and we also know the city borough, but to find the neighborhood, we'll need a map that shows neighborhood names and then try to establish if the school falls within a neighborhood's boundaries. Another way to find the name using the module Geopy is shown in this small tutorial. A web source with all neighborhood names will be used to finish our task, and for that we'll need web scrapping.
+With the coordinates we can place each school on a map, and we also know the city borough from the dataset, but to find the neighborhood, we'll need a map that shows neighborhood names and then try to establish if the school falls within a neighborhood's boundaries. The module Geopy eases this task because it gives us the name of the neighborhood just by introducing the coordinates of the school. A web source with all neighborhood names will be used to finish our task, and for that we'll need web scrapping.
 <br>
 ### First we import the libraries we need and the data
 <br>
