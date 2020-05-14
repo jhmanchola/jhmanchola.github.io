@@ -22,6 +22,8 @@ Project Methods:
 - Visualize important features in the data.
 - Use machine learning methods to predict future sea surface temperatures.
 
+The code for the project can be found in this [Github repository](https://github.com/jhmanchola/My_Projects/blob/master/NOAA_Ocean_Data_Analysis/NOAA%20Ocean%20Data%20Analysis-Copy1.ipynb).
+
 <img src="../6_img/map_1.gif" class="center">
 
 <strong>Map 1.</strong> Animation showing the change in the top average sea surface temperatures by year, from the years 1950 to 2017. As it is expected, the area along the equator has the highest average temperatures. Notice how the year 1950 has more lower temperatures and more locations on the top average temperatures than the year 2017. Each year has the top 200,000 readings averaged by location. The animation is showing an increase in sea surface temperature. The area in the Red Sea and the Persian Gulf stand out as the hotter places across all years.
@@ -133,11 +135,16 @@ To compare the prediction with reality, below is a visualization from NASA that 
 Image: NASA [Scientific Visualization Studio](https://svs.gsfc.nasa.gov/4785)
 
 References:
+
+<br>
 ICOADS:[https://icoads.noaa.gov/](https://icoads.noaa.gov/)
+<br>
 <br>
 El Niño: [https://earthobservatory.nasa.gov/features/ElNino](https://earthobservatory.nasa.gov/features/ElNino)
 <br>
+<br>
 Observational Needs of Sea Surface Temperature: [https://www.frontiersin.org/articles/10.3389/fmars.2019.00420/full](https://www.frontiersin.org/articles/10.3389/fmars.2019.00420/full)
+<br>
 <br>
 Sea Surface Temperature anomalies and patterns of Global Disease Outbreaks: 2009-2018 (4K version): [https://svs.gsfc.nasa.gov/4785](https://svs.gsfc.nasa.gov/4785)
 <br>
