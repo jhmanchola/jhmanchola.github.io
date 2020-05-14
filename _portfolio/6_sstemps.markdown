@@ -130,7 +130,7 @@ To compare the prediction with reality, below is a visualization from NASA that 
 
 <img src="../6_img/map_2.png" class="center">
 
-Image NASA [Scientific Visualization Studio](https://svs.gsfc.nasa.gov/4785)
+Image: NASA [Scientific Visualization Studio](https://svs.gsfc.nasa.gov/4785)
 
 References:
 ICOADS:[https://icoads.noaa.gov/](https://icoads.noaa.gov/)
