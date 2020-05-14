@@ -41,6 +41,107 @@ The following visualization shows how temperature behaves as a function of locat
 
 <strong>Chart 2.</strong> By changing the longitude there isn't much change for each temperature point. Longitudes, the imaginary lines moving East to West around Earth don't vary a lot. Latitudes (lines going North to South), on the other hand, show different temperatures according to the value. Latitudes on the equator have higher temperatures than those in the Northern and Southern Hemispheres. 
 
+<br>
+#### Methods of data collection for sea surface temperature
+<br>
+
+The temperature data was collected by different observation platforms using different methods. Here are the most used platforms and methods set appart. 
+
+<strong>Platforms used</strong>
+<br>
+Each platform is numbered in the NOAA database from 0 to 21 with the following legend:
+
+- 0 : US Navy or “deck” log, or unknown
+- 1 : merchant ship or foreign military
+- 2 : ocean station vessel—off station or station proximity unknown
+- 3 : ocean station vessel—on station
+- 4 : lightship
+- 5 : ship
+- 6 : moored buoy
+- 7 : drifting buoy
+- 8 : ice buoy (note: currently unused)
+- 9 : ice station (manned, including ships overwintering in ice)
+- 10 : oceanographic station data (bottle and low-resolution CTD/XCTD data)
+- 11 : mechanical/digital/micro bathythermograph (MBT)
+- 12 : expendable bathythermograph (XBT)
+- 13 : Coastal-Marine Automated Network (C-MAN) (NDBC operated)
+- 14 : other coastal/island station
+- 15 : fixed (or mobile) ocean platform (plat, rig)
+- 16 : tide gauge
+- 17 : high-resolution Conductivity-Temp.-Depth (CTD)/Expendable CTD (XCTD) 74 
+- 18 : profiling float
+- 19 : undulating oceanographic recorder
+- 20 : autonomous pinneped bathythermograph
+- 21 : glider
+
+With this information, we can examine which platforms were used for the collection of data for the sea surface temperature from the years 1950 to 2017. 
+
+<img src="../6_img/chart_3.png" class="center">
+
+<strong>Chart 3.</strong> Top 10 platforms used ordered by count and percentage.
+
+<strong>Methods used</strong>
+<br>
+
+The methods used for data gathering are classified by NOAA as follows:
+
+- 0 – bucket 
+- 1 – condenser inlet (intake) 
+- 2 – trailing thermistor 
+- 3 – hull contact sensor 
+- 4 – through hull sensor 
+- 5 – radiation thermometer 
+- 6 – bait tanks thermometer 
+- 7 – others 
+- 9 – unknown or non-bucket 
+- 10 – “implied” bucket (note: applicable to early ICOADS data)
+- 11 – reversing thermometer or mechanical sensor 
+- 12 – electronic sensor
+
+<img src="../6_img/chart_4.png" class="center">
+
+<strong>Chart 4.</strong> The 10 top methods used. Most of the data had null values for the method column, so that is why the top value is marked as 'unknown'. NOAA has no explanation yet as to why most of this values are missing, but there had to be a method used or else there could've not been a reading in the temperature value.
+
+<br>
+#### Use a machine learning model to predict future changes in Centarl Pacific region
+<br>
+
+An important region of the Pacific Ocean, known as the 'Niño 3.4' region, shows how higher sea surface temperatures can affect the climate. Here we create a machine learning model to try to predict the sea surface temperature for the next couple of years after 2017, the last year in the dataset. According to the NASA Earth Observatory [website](https://earthobservatory.nasa.gov/features/ElNino), that region lies in a longitude between 120 West and 170 West. The latitude is between 20 North and 20 South.
+
+Before modeling, it is important to check if there are any outliers.
+
+<img src="../6_img/chart_5.png" class="center">
+
+<strong>Chart 5.</strong> This chart counts the highest average readings in the Central pacific region for 812 months, starting from January of 1950 until August of 2017. There are no outliers in the data because all points lie between a reasonable range of 25 C° and 31 C°. This chart is also showing an upward trend in temperature readings. 
+
+
+<br>
+<strong>Predict the next 12 months given the last 48 months</strong>
+<br>
+
+Using a [Tensorflow](https://www.tensorflow.org/) machine learning model, we can try and make a prediction for the average temperature for the next 12 months after the last date in the dataset for the Niño 3.4 Pacific region. The last average value is from August 2017, so the model will predict the next 12 months starting in September 2017.
+
+
 {% include sstemps.html %}
+
+**Chart 7.** Prediction of the next 12 months after August 2017. Only 19 previous months are plotted of the 48 that were used to make the prediction. The year 2017 up until August shows a drop in temperatures compared to previous years. The prediction is indicating a rise of 0.2 C° in September 2017 and a highest temperature of 29.61 C° reached in March 2018. A drop of 0.1 C° is predicted for July 2018 as compared with July of 2017. The prediction also shows that temperatures would not rise to the levels of the year 2016 through most of 2018. 
+
+To compare the prediction with reality, below is a visualization from NASA that shows the behavior of sea surface temperatures in the El Niño 3.4 region from 2009 up to 2018. For the 2018 part, we can see a similar line from the prediction, except in the July drop, which in reality did'nt happen.
+
+<img src="../6_img/map_2.png" class="center">
+
+Image NASA [Scientific Visualization Studio](https://svs.gsfc.nasa.gov/4785)
+
+References:
+ICOADS:[https://icoads.noaa.gov/](https://icoads.noaa.gov/)
+<br>
+El Niño: [https://earthobservatory.nasa.gov/features/ElNino](https://earthobservatory.nasa.gov/features/ElNino)
+<br>
+Observational Needs of Sea Surface Temperature: [https://www.frontiersin.org/articles/10.3389/fmars.2019.00420/full](https://www.frontiersin.org/articles/10.3389/fmars.2019.00420/full)
+<br>
+Sea Surface Temperature anomalies and patterns of Global Disease Outbreaks: 2009-2018 (4K version): [https://svs.gsfc.nasa.gov/4785](https://svs.gsfc.nasa.gov/4785)
+<br>
+
+
 
 
