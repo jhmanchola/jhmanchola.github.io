@@ -105,7 +105,7 @@ The methods used for data gathering are classified by NOAA as follows:
 <strong>Chart 4.</strong> The 10 top methods used. Most of the data had null values for the method column, so that is why the top value is marked as 'unknown'. NOAA has no explanation yet as to why most of this values are missing, but there had to be a method used or else there could've not been a reading in the temperature value.
 
 <br>
-#### Use a machine learning model to predict future changes in Centarl Pacific region
+#### Use a machine learning model to predict future changes in Central Pacific region
 <br>
 
 An important region of the Pacific Ocean, known as the 'Niño 3.4' region, shows how higher sea surface temperatures can affect the climate. Here we create a machine learning model to try to predict the sea surface temperature for the next couple of years after 2017, the last year in the dataset. According to the NASA Earth Observatory [website](https://earthobservatory.nasa.gov/features/ElNino), that region lies in a longitude between 120 West and 170 West. The latitude is between 20 North and 20 South.
